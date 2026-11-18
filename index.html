@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#164c43"><title>圓盤系統支撐架｜產品數量表</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="catalog.js" defer></script><script src="pdf.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./"><img id="companyLogo" src="assets/sucoot-logo.png" width="206" height="33" alt="SUCOOT 實固股份有限公司"><span>支撐架數量表<small>QUANTITY WORKSHEET</small></span></a><span class="local-badge">● 本機作業 · 無須登入</span></header>
+<main>
+  <section class="intro"><p class="eyebrow">MATERIAL PLANNING / 圓盤系統</p><h1>每個品項，清楚計算。</h1><p>圓盤系統支撐架產品數量表，從備料到出貨一次整理。</p></section>
+  <aside class="source-note"><strong>已依型錄及補充資料列出 66 個品項／規格</strong><p>來源：7527.pdf（2025/11）及使用者補充品號。「自編」非官方品號，未載單重可自行填寫。爬梯踏板 48 kg 為約重；鋁製爬梯整組 16.53 kg 含螺絲與扶手。</p><details><summary>品項整理說明</summary><p>定位桿僅列 L61815、L62415；主架、平主架及橫桿依長度分列。斜桿 D6 編碼先橫向、後高度。型錄未提供的尺寸與單重不推估。升級時移除的舊品項保留於本機資料備份。</p></details></aside>
+  <section class="card project"><div class="section-label"><span>01</span><h2>表單資訊</h2><span id="saveState" role="status">自動儲存於此瀏覽器</span></div><div class="info-grid">
+    <label>客戶名稱<input id="customer" maxlength="60" placeholder="輸入客戶名稱"></label><label>日期<input id="date" type="date"></label>
+    <label>工程名稱<input id="project" maxlength="60" placeholder="輸入工程名稱"></label><label>製表人<input id="author" maxlength="30" placeholder="輸入姓名"></label>
+  </div></section>
+  <section class="card worksheet" aria-labelledby="tableTitle"><div class="table-toolbar"><div class="section-label"><span>02</span><h2 id="tableTitle">產品明細</h2><span id="rowCount" class="count-pill"></span></div><div class="table-actions"><button id="addColumn">＋ 新增欄位</button><button id="addRow" class="primary">＋ 自訂新增品項</button></div></div>
+    <div id="columnManager" class="column-manager" hidden><strong>自訂欄位</strong><div id="columnList"></div><small>按「刪除欄位」可移除；誤刪後可按提示中的「復原」。</small></div>
+    <div class="table-help">填入數量與單重即可計算；未載單重可留白，之後再補填。<span>重量單位：kg</span></div>
+    <div class="catalog-tools"><label class="search-label"><span class="sr-only">搜尋品項</span><input id="search" type="search" placeholder="搜尋品號、品名或規格…"></label><label><span class="sr-only">分類</span><select id="category"><option value="">全部分類</option></select></label><label class="selected-toggle"><input id="onlySelected" type="checkbox">只看已填數量</label><button id="restoreCatalog">補齊預設品項</button><button id="backup">下載資料備份</button><span id="filterCount"></span></div>
+    <div class="table-scroll"><table class="editor-table"><thead><tr><th scope="col">品項編號</th><th scope="col">品項名稱</th><th scope="col">規格</th><th scope="col" class="number">數量 <small>件</small></th><th scope="col" class="number">單重 <small>kg／件</small></th><th scope="col" class="number">總重量 <small>kg</small></th><th scope="col">操作</th></tr></thead><tbody id="rows"></tbody></table></div>
+    <p id="noResults" class="empty" hidden>沒有符合條件的品項，請調整搜尋或分類。</p><div id="empty" class="empty" hidden><h3>開始整理備料清單</h3><p>可新增自己的品項，或按「補齊預設品項」載入型錄清單。</p><button id="emptyAdd">＋ 新增第一個品項</button></div>
+    <div id="tableTotal" class="table-total"><span>總重量<small id="weightStatus"></small></span><strong id="tableWeight">0.000 kg</strong></div><p id="validation" role="alert" hidden></p>
+  </section>
+  <section class="bottom-grid"><label>備註<textarea id="notes" rows="4" maxlength="500" placeholder="例如：交貨地點、需求日期或其他備料說明"></textarea></label><div class="export-panel"><p class="eyebrow">READY TO SHARE</p><h2>整理完成，即可出單。</h2><p>僅輸出數量大於 0 的品項，與畫面使用相同的重量計算。</p><div class="export-buttons"><button id="preview" disabled>預覽 PDF</button><button id="print" disabled>列印表單</button><button id="pdf" class="primary" disabled>下載 PDF ↓</button></div><small id="exportHint"></small></div></section>
+  <footer><span>圓盤系統支撐架 · 產品數量表</span><span>資料僅存於此瀏覽器；清除瀏覽器資料將移除表單。</span></footer>
+</main>
+<dialog id="columnDialog" aria-labelledby="columnTitle"><form id="columnForm"><h2 id="columnTitle">新增自訂欄位</h2><p>例如：備註、使用位置、批號。最多新增 6 個文字欄位，會同步儲存及輸出至 PDF、列印版。</p><label>欄位名稱<input id="columnName" maxlength="20" placeholder="例如：使用位置" autocomplete="off"></label><p id="columnError" role="alert"></p><div class="dialog-actions"><button id="cancelColumn" type="button">取消</button><button class="primary" type="submit">新增欄位</button></div></form></dialog>
+<dialog id="pdfPreview" aria-labelledby="previewTitle"><div class="preview-toolbar"><div><h2 id="previewTitle">PDF 預覽</h2><p id="previewStatus" role="status"></p></div><div class="preview-controls"><label>縮放<select id="previewZoom"><option value="fit">符合寬度</option><option value="100">100%</option><option value="150">150%</option></select></label><button id="closePreview" type="button">關閉</button></div></div><div id="previewPages" aria-busy="false"></div><div class="preview-footer"><span>預覽與下載 PDF 使用相同頁面；每頁重複抬頭資訊。</span><div><button id="backToEdit" type="button">返回編輯</button><button id="previewDownload" type="button" class="primary" disabled>下載此 PDF</button></div></div></dialog>
+<style id="printPageStyle" media="print"></style><div id="printArea"></div><div id="toast" role="status" hidden></div>
+</body></html>
