@@ -3,6 +3,14 @@
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#164c43"><title>圓盤系統支撐架｜產品數量表</title>
+  <!-- PWA_START -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/pwa/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="實固數量表">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script src="pwa.js" defer></script>
+  <!-- PWA_END -->
   <link rel="stylesheet" href="styles.css">
   <script src="catalog.js" defer></script><script src="pdf.js" defer></script><script src="app.js" defer></script>
 </head>
@@ -11,6 +19,9 @@
 <main>
   <section class="intro"><p class="eyebrow">MATERIAL PLANNING / 圓盤系統</p><h1>每個品項，清楚計算。</h1><p>圓盤系統支撐架產品數量表，從備料到出貨一次整理。</p></section>
   <aside class="source-note"><strong>已依型錄及補充資料列出 66 個品項／規格</strong><p>來源：7527.pdf（2025/11）及使用者補充品號。「自編」非官方品號，未載單重可自行填寫。爬梯踏板 48 kg 為約重；鋁製爬梯整組 16.53 kg 含螺絲與扶手。</p><details><summary>品項整理說明</summary><p>定位桿僅列 L61815、L62415；主架、平主架及橫桿依長度分列。斜桿 D6 編碼先橫向、後高度。型錄未提供的尺寸與單重不推估。升級時移除的舊品項保留於本機資料備份。</p></details></aside>
+  <!-- PWA_START -->
+  <section class="pwa-panel" aria-label="手機安裝與離線使用"><div><h2>安裝到手機，離線也能填表</h2><span id="pwaStatus" role="status" data-ready="false">正在準備離線使用…</span><p>首次連線開啟並顯示「已可離線使用」後，即可離線填表、預覽與下載 PDF。</p></div><div class="pwa-actions"><button id="installApp" class="primary" type="button">安裝到手機</button><button id="installHelp" type="button">安裝步驟</button><button id="updateApp" type="button" hidden>更新並重新開啟</button></div></section>
+  <!-- PWA_END -->
   <section class="card project"><div class="section-label"><span>01</span><h2>表單資訊</h2><span id="saveState" role="status">自動儲存於此瀏覽器</span></div><div class="info-grid">
     <label>客戶名稱<input id="customer" maxlength="60" placeholder="輸入客戶名稱"></label><label>日期<input id="date" type="date"></label>
     <label>工程名稱<input id="project" maxlength="60" placeholder="輸入工程名稱"></label><label>負責業務<input id="salesperson" maxlength="30" placeholder="輸入負責業務姓名"></label>
@@ -27,6 +38,9 @@
   <section class="bottom-grid"><label>備註<textarea id="notes" rows="4" maxlength="500" placeholder="例如：交貨地點、需求日期或其他備料說明"></textarea></label><div class="export-panel"><p class="eyebrow">READY TO SHARE</p><h2>整理完成，即可出單。</h2><p>僅輸出數量大於 0 的品項，與畫面使用相同的重量計算。</p><div class="export-buttons"><button id="preview" disabled>預覽 PDF</button><button id="print" disabled>列印表單</button><button id="pdf" class="primary" disabled>下載 PDF ↓</button></div><small id="exportHint"></small></div></section>
   <footer><span>圓盤系統支撐架 · 產品數量表</span><span>資料僅存於此瀏覽器；清除瀏覽器資料將移除表單。</span></footer>
 </main>
+<!-- PWA_START -->
+<dialog id="installDialog" aria-labelledby="installTitle"><h2 id="installTitle">安裝到手機</h2><ol><li><strong>Android：</strong>用 Chrome 開啟網站，按「安裝到手機」；也可從瀏覽器選單選「安裝應用程式」或「新增至主畫面」。</li><li><strong>iPhone／iPad：</strong>用 Safari 開啟網站，按「分享」→「加入主畫面」→「新增」。</li><li>從主畫面開啟 App，先連線一次，等顯示「已可離線使用」後即可離線使用。</li></ol><p>資料保存在這個裝置。既有瀏覽器資料與主畫面 App 不一定共用；可先下載資料備份。列印仍由手機的列印功能處理。</p><div class="dialog-actions"><button id="closeInstall" class="primary" type="button">知道了</button></div></dialog>
+<!-- PWA_END -->
 <dialog id="columnDialog" aria-labelledby="columnTitle"><form id="columnForm"><h2 id="columnTitle">新增自訂欄位</h2><p>例如：備註、使用位置、批號。最多新增 6 個文字欄位，會同步儲存及輸出至 PDF、列印版。</p><label>欄位名稱<input id="columnName" maxlength="20" placeholder="例如：使用位置" autocomplete="off"></label><p id="columnError" role="alert"></p><div class="dialog-actions"><button id="cancelColumn" type="button">取消</button><button class="primary" type="submit">新增欄位</button></div></form></dialog>
 <dialog id="pdfPreview" aria-labelledby="previewTitle"><div class="preview-toolbar"><div><h2 id="previewTitle">PDF 預覽</h2><p id="previewStatus" role="status"></p></div><div class="preview-controls"><label>縮放<select id="previewZoom"><option value="fit">符合寬度</option><option value="100">100%</option><option value="150">150%</option></select></label><button id="closePreview" type="button">關閉</button></div></div><div id="previewPages" aria-busy="false"></div><div class="preview-footer"><span>預覽與下載 PDF 使用相同頁面；每頁重複抬頭資訊。</span><div><button id="backToEdit" type="button">返回編輯</button><button id="previewDownload" type="button" class="primary" disabled>下載此 PDF</button></div></div></dialog>
 <style id="printPageStyle" media="print"></style><div id="printArea"></div><div id="toast" role="status" hidden></div>

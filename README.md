@@ -6,6 +6,20 @@
 
 ## 使用
 
+### 安裝到手機與離線使用（PWA）
+
+這個版本可安裝到主畫面，不需安裝 APK 或送 App Store。安裝需要先透過 HTTPS 開啟已發布的網站。
+
+1. 若尚未發布網站，到 [GitHub Pages 設定](https://github.com/F12321F/QuantityTable/settings/pages)，選 **Deploy from a branch → main → / (root) → Save**。
+2. 等待 GitHub Pages 部署完成後，網址通常是 `https://f12321f.github.io/QuantityTable/`。本次工作區網路對該網域與 GitHub Pages API 回傳 403，未確認公開網站是否已啟用，不能以本機測試當作正式網站發布證據。
+3. Android 使用 Chrome 開啟網站，按「安裝到手機」，或瀏覽器選單的「安裝應用程式／新增至主畫面」。iPhone／iPad 使用 Safari 的「分享 → 加入主畫面 → 新增」。
+4. 從主畫面開啟後先連線一次，等顯示「已可離線使用」；之後可離線開啟、編輯、儲存、預覽及下載 PDF。實際列印仍使用手機／印表機支援的列印方式。
+5. 新版本準備好時顯示「更新並重新開啟」，由使用者決定更新時機，不在填表途中強制重載。
+
+資料仍保存在該裝置。Safari／Chrome 分頁與主畫面 App 不保證共用資料；既有資料可先下載備份。清除網站資料或移除相關瀏覽器儲存空間會影響本機資料。PWA 首次快取、安裝與取得更新需要連線；沒有離線前先開啟網站的裝置無法直接在斷網時首次載入。
+
+### 單檔離線版
+
 下載整個儲存庫後開啟 `index.html`，或使用 [單檔下載版](downloads/quantity-table.html)（在 GitHub 檔案頁按下載原始檔，再以瀏覽器開啟）。
 
 - 抬頭左側依序是客戶名稱、工程名稱，右側依序為日期、負責業務、製表人。總重量集中顯示在產品明細下方。
@@ -37,7 +51,7 @@
 python3 -m http.server 3000 --bind 0.0.0.0
 ```
 
-開啟伺服器後執行 `node tests/workbook.cjs`。測試需 Playwright 與 Chromium；本雲端基礎環境已提供，可用 `CHROMIUM_PATH` 指定 Chromium，或以 `APP_URL` 指定測試網址。
+開啟伺服器後執行 `node tests/workbook.cjs`。另可直接執行 `node tests/pwa.cjs`，它會啟動暫時伺服器，驗證專案子目錄、快取、關閉後離線重開、資料保存、PDF 匯出及更新流程。測試需 Playwright 與 Chromium；本雲端基礎環境已提供，可用 `CHROMIUM_PATH` 指定 Chromium，或以 `APP_URL` 指定測試網址。
 
 重新整理型錄資料、產生單檔版：
 
@@ -46,8 +60,10 @@ python3 scripts/build-catalog.py
 python3 scripts/build-standalone.py
 ```
 
-單檔版會儲存為 `downloads/quantity-table.html`。加上 `--output /指定目錄`，另輸出中文檔名 HTML 與來源 ZIP。請將修改過的來源與重新產生的單檔版一起提交。
+`build-standalone.py` 會先呼叫 `build-pwa.py`，依實際 runtime 檔案內容生成 `sw.js` 的快取版本。每次修改網頁、程式、樣式或圖示，都應重新執行再提交 `sw.js`。安裝設定是 `manifest.webmanifest`，手機圖示位於 `assets/pwa/`。
+
+單檔版會移除 PWA 安裝入口與 service worker 註冊，繼續保持一個 HTML 即可離線使用；主畫面安裝請使用 HTTPS 網站版。單檔版會儲存為 `downloads/quantity-table.html`。加上 `--output /指定目錄`，另輸出中文檔名 HTML 與來源 ZIP。請將修改過的來源與重新產生的單檔版一起提交。
 
 ## GitHub Pages
 
-此專案可直接作為靜態網站。若要啟用，至儲存庫 **Settings → Pages → Deploy from a branch**，選擇 `main` 分支及 `/ (root)`。本次上傳程式碼不等於已啟用或驗證 Pages 網站。
+此專案可直接作為靜態網站。若要啟用，至儲存庫 **Settings → Pages → Deploy from a branch**，選擇 `main` 分支及 `/ (root)`。提交 PWA 程式碼不等於已啟用或驗證 Pages 網站；本地端已驗證功能，正式網址尚待使用者在設定啟用或確認。
