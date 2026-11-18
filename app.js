@@ -12,12 +12,12 @@ const validQuantity=value=>/^\d+$/.test(value)&&Number(value)<=999999;
 const validWeight=value=>/^(?:\d+(?:\.\d{1,3})?|\.\d{1,3})$/.test(value)&&Number(value)<=999999.999;
 const rowWeight=row=>row.weight===''?null:Math.round(Number(row.weight)*1000)*Number(row.quantity)/1000;
 const catalogRow=item=>({id:id(),catalogId:item.id,code:item.code,name:item.name,spec:item.spec,weight:item.weight,quantity:'0',extra:{}});
-let state={customer:'',project:'',date:today(),author:'',notes:'',catalogVersion:'',columns:[],archivedRows:[],rows:[]};
+let state={customer:'',project:'',date:today(),salesperson:'',author:'',notes:'',catalogVersion:'',columns:[],archivedRows:[],rows:[]};
 let storageAvailable=true,previewBusy=false;
 try{
   const data=JSON.parse(localStorage.getItem(STORE));
   if(data&&Array.isArray(data.rows)){
-    for(const key of ['customer','project','date','author','notes'])if(typeof data[key]==='string')state[key]=data[key];
+    for(const key of ['customer','project','date','salesperson','author','notes'])if(typeof data[key]==='string')state[key]=data[key];
     state.catalogVersion=typeof data.catalogVersion==='string'?data.catalogVersion:'';
     state.columns=Array.isArray(data.columns)?data.columns.filter((c,i,a)=>c&&typeof c.id==='string'&&/^col_[a-z0-9-]+$/.test(c.id)&&typeof c.name==='string'&&c.name.trim()&&a.findIndex(x=>x?.id===c.id)===i).slice(0,6).map(c=>({id:c.id,name:c.name.trim().slice(0,20)})):[];
     state.archivedRows=Array.isArray(data.archivedRows)?data.archivedRows:[];
@@ -92,7 +92,7 @@ $('rows').addEventListener('click',event=>{
   if(!event.target.closest('.delete'))return;const index=state.rows.findIndex(r=>r.id===event.target.closest('tr').dataset.id);if(index<0)return;
   const row=state.rows[index];state.rows.splice(index,1);renderRows();save();showUndo(`已刪除品項「${row.name||row.code||'未命名'}」`,()=>{if(!state.rows.some(r=>r.id===row.id))state.rows.splice(Math.min(index,state.rows.length),0,row);});
 });
-for(const key of ['customer','project','date','author','notes']){$(key).value=state[key];$(key).addEventListener('input',()=>{state[key]=$(key).value;save();});}
+for(const key of ['customer','project','date','salesperson','author','notes']){$(key).value=state[key];$(key).addEventListener('input',()=>{state[key]=$(key).value;save();});}
 $('addColumn').addEventListener('click',()=>{if(state.columns.length>=6){toast('最多新增 6 個文字欄位。');return;}$('columnError').textContent='';$('columnName').value='';$('columnDialog').showModal();$('columnName').focus();});
 $('cancelColumn').addEventListener('click',()=>$('columnDialog').close());
 $('columnForm').addEventListener('submit',event=>{
@@ -115,7 +115,7 @@ function renderPrint(data){
   $('printPageStyle').textContent=`@page{size:A4 ${data.columns.length?'landscape':'portrait'};margin:15mm 12mm}`;
   const colspan=6+data.columns.length;
   const title=`<img class="report-logo" src="${esc($('companyLogo').src)}" alt="SUCOOT 實固股份有限公司"><h1 class="print-heading">圓盤系統支撐架產品數量表</h1>`;
-  const meta=`<div class="print-meta"><span>客戶名稱：${esc(data.customer||'—')}</span><span>日期：${esc(data.date||'—')}</span><span>工程名稱：${esc(data.project||'—')}</span><span>製表人：${esc(data.author||'—')}</span></div>`;
+  const meta=`<div class="print-meta"><span>客戶名稱：${esc(data.customer||'—')}</span><span>日期：${esc(data.date||'—')}</span><span>工程名稱：${esc(data.project||'—')}</span><span>負責業務：${esc(data.salesperson||'—')}</span><span class="author-meta">製表人：${esc(data.author||'—')}</span></div>`;
   const headers=['品項編號','品項名稱','規格','數量（件）','單重（kg）','總重量（kg）',...data.columns.map(c=>c.name)].map((name,i)=>`<th${i>=3&&i<=5?' class="number"':''}>${esc(name)}</th>`).join('');
   const body=data.rows.map(r=>`<tr><td>${esc(r.code)}</td><td>${esc(r.name)}</td><td>${esc(r.spec||'—')}</td><td class="number">${fmt(Number(r.quantity),0)}</td><td class="number">${r.weight===''?'待填':fmt(Number(r.weight))}</td><td class="number">${r.weight===''?'待填':fmt(rowWeight(r))}</td>${data.columns.map(c=>`<td>${esc(r.extra?.[c.id]||'—')}</td>`).join('')}</tr>`).join('');
   const summary=`<div class="print-summary"><strong>已知總重量：${fmt(data.sum.grams/1000)} kg</strong>${data.sum.pending?`<br>注意：${data.sum.pending} 項缺少單重，未計入總重量。`:''}</div>${data.notes?`<div class="print-notes">備註：${esc(data.notes)}</div>`:''}<p class="print-caption">${reportCaption}</p>`;

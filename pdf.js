@@ -27,7 +27,8 @@ window.createQuantityPDF=async function(data,{fmt,rowWeight,caption=''},options=
     ctx.drawImage(logo,margin,36,190,190*logo.naturalHeight/logo.naturalWidth);text('圓盤系統支撐架產品數量表',margin,82,24,'#164c43','left',true);y=128;
     const leftWidth=(W-margin*2)*.64,rightX=margin+leftWidth+24,rightWidth=W-margin-rightX;
     y+=Math.max(wrapped(`客戶名稱：${data.customer||'—'}`,margin,y,leftWidth),wrapped(`日期：${data.date||'—'}`,rightX,y,rightWidth))+8;
-    y+=Math.max(wrapped(`工程名稱：${data.project||'—'}`,margin,y,leftWidth),wrapped(`製表人：${data.author||'—'}`,rightX,y,rightWidth))+22;
+    y+=Math.max(wrapped(`工程名稱：${data.project||'—'}`,margin,y,leftWidth),wrapped(`負責業務：${data.salesperson||'—'}`,rightX,y,rightWidth))+8;
+    y+=wrapped(`製表人：${data.author||'—'}`,rightX,y,rightWidth)+22;
     const content=columns.map(c=>lines(c.name,c.width-16,10)),height=Math.max(34,...content.map(list=>list.length*17+16));ctx.fillStyle='#edf2e8';ctx.fillRect(margin,y,W-margin*2,height);
     columns.forEach((c,i)=>content[i].forEach((line,j)=>text(line,c.number?c.x+c.width-8:c.x+8,y+9+j*17,10,'#365544',c.number?'right':'left',true)));y+=height;
   }

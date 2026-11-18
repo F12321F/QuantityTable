@@ -8,6 +8,8 @@
 #pdfPreview{width:min(1280px,calc(100vw - 28px));max-width:none;height:94vh;max-height:94vh;padding:0;overflow:hidden}#pdfPreview[open]{display:flex;flex-direction:column}.preview-toolbar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;border-bottom:1px solid var(--line);flex-shrink:0}.preview-toolbar h2{font-size:18px;margin:0}.preview-toolbar p{font-size:11px;margin:5px 0 0}.preview-controls{display:flex;align-items:center;gap:12px}.preview-controls label{display:flex;gap:7px;align-items:center}.preview-controls select{font-size:12px;padding:7px}#previewPages{flex:1;min-height:0;overflow:auto;padding:20px;background:#e2e7e1;overscroll-behavior:contain}.preview-page{width:min(100%,var(--page-width));margin:0 auto 22px}.preview-page img{width:100%;height:auto;display:block;background:white;box-shadow:0 2px 12px #0002}.preview-page figcaption{font-size:11px;text-align:center;padding-top:9px;color:#617164}#previewPages[data-zoom="100"] .preview-page{width:var(--page-width)}#previewPages[data-zoom="150"] .preview-page{width:calc(var(--page-width)*1.5)}.preview-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:13px 20px;border-top:1px solid var(--line);flex-shrink:0;background:white}.preview-footer>span{font-size:11px;color:var(--muted)}.preview-footer>div{display:flex;gap:9px;flex-shrink:0}
 @media(max-width:1240px){main{margin:0 30px}.topbar{padding:0 30px}}@media(max-width:700px){main{margin:0 18px}.topbar{padding:0 20px;height:72px}.brand{font-size:14px;gap:10px}.brand img{width:118px}.brand small{display:none}.local-badge{font-size:10px}.intro{padding:32px 0 25px}h1{font-size:30px;max-width:270px}.intro>p:last-child{font-size:12px}.source-note{padding:13px;font-size:11px}.project{padding:20px}.section-label #saveState{font-size:9px}.info-grid{grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:18px 14px}.info-grid input{padding:10px 8px;font-size:12px}.table-toolbar{padding:18px 17px 14px;flex-wrap:wrap}.table-actions{width:100%}.table-actions button{flex:1;font-size:12px;padding:10px}.column-manager{margin:0 17px 16px}.table-help{padding:0 17px 15px;display:block}.table-help span{display:block;margin-top:5px}.catalog-tools{padding:0 17px 17px;gap:10px}.search-label{flex-basis:100%}.catalog-tools select{max-width:170px}.bottom-grid{grid-template-columns:1fr;gap:26px}.export-panel{text-align:left}.export-buttons button{flex:1;min-width:0;font-size:12px;padding:11px 8px}.table-total{padding:18px}.table-total strong{font-size:20px}footer{flex-direction:column;gap:6px}.preview-toolbar{padding:12px;flex-wrap:wrap;gap:10px}.preview-controls{width:100%;justify-content:space-between}#previewPages{padding:10px}.preview-footer{padding:12px;flex-wrap:wrap}.preview-footer>div{width:100%}.preview-footer button{flex:1}}
 @page{size:A4 portrait;margin:15mm 12mm}@media print{body{background:white;color:#111}.topbar,main,dialog,#toast{display:none!important}#printArea{display:block;font-size:10pt}.report-logo{display:block;width:45mm;height:auto;margin-bottom:4mm}.print-heading{font-size:19pt;line-height:1.3;margin:0 0 7mm}.print-meta{display:grid;grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:3mm 8mm;font-size:10pt}.print-meta span{min-width:0;overflow-wrap:anywhere}.print-table{width:100%;table-layout:fixed;border-collapse:collapse}.print-table th,.print-table td{border:1px solid #bbb;padding:3mm 2mm;overflow-wrap:anywhere;font-size:9pt}.print-table th{text-align:left;background:#edf1e9!important;print-color-adjust:exact}.print-table th.number{text-align:right}.print-table th:first-child{width:14%}.print-table th:nth-child(2),.print-table th:nth-child(3){width:23%}.print-table th:nth-child(4){width:10%}.print-table th:nth-child(5){width:14%}.print-table th:nth-child(6){width:16%}.print-table.with-custom-columns th{width:auto!important;font-size:8pt}.print-table.with-custom-columns td{font-size:8pt}.print-table thead{display:table-header-group}.print-table tr{break-inside:avoid}.print-report-header>td{border:0;padding:0 0 5mm}.print-end{display:table-row-group}.print-end>tr>td{border:0;padding:0}.print-summary{border-top:2px solid #333;margin-top:5mm;padding-top:4mm;line-height:1.8}.print-notes{white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.7;margin-top:6mm}.print-caption{color:#666;font-size:8pt;margin-top:6mm}}
+
+.info-grid .author-field{grid-column:2}@media print{.print-meta .author-meta{grid-column:2}}
 </style>
 
 </head>
@@ -18,7 +20,8 @@
   <aside class="source-note"><strong>已依型錄及補充資料列出 66 個品項／規格</strong><p>來源：7527.pdf（2025/11）及使用者補充品號。「自編」非官方品號，未載單重可自行填寫。爬梯踏板 48 kg 為約重；鋁製爬梯整組 16.53 kg 含螺絲與扶手。</p><details><summary>品項整理說明</summary><p>定位桿僅列 L61815、L62415；主架、平主架及橫桿依長度分列。斜桿 D6 編碼先橫向、後高度。型錄未提供的尺寸與單重不推估。升級時移除的舊品項保留於本機資料備份。</p></details></aside>
   <section class="card project"><div class="section-label"><span>01</span><h2>表單資訊</h2><span id="saveState" role="status">自動儲存於此瀏覽器</span></div><div class="info-grid">
     <label>客戶名稱<input id="customer" maxlength="60" placeholder="輸入客戶名稱"></label><label>日期<input id="date" type="date"></label>
-    <label>工程名稱<input id="project" maxlength="60" placeholder="輸入工程名稱"></label><label>製表人<input id="author" maxlength="30" placeholder="輸入姓名"></label>
+    <label>工程名稱<input id="project" maxlength="60" placeholder="輸入工程名稱"></label><label>負責業務<input id="salesperson" maxlength="30" placeholder="輸入負責業務姓名"></label>
+    <label class="author-field">製表人<input id="author" maxlength="30" placeholder="輸入姓名"></label>
   </div></section>
   <section class="card worksheet" aria-labelledby="tableTitle"><div class="table-toolbar"><div class="section-label"><span>02</span><h2 id="tableTitle">產品明細</h2><span id="rowCount" class="count-pill"></span></div><div class="table-actions"><button id="addColumn">＋ 新增欄位</button><button id="addRow" class="primary">＋ 自訂新增品項</button></div></div>
     <div id="columnManager" class="column-manager" hidden><strong>自訂欄位</strong><div id="columnList"></div><small>按「刪除欄位」可移除；誤刪後可按提示中的「復原」。</small></div>
@@ -1299,7 +1302,8 @@ window.createQuantityPDF=async function(data,{fmt,rowWeight,caption=''},options=
     ctx.drawImage(logo,margin,36,190,190*logo.naturalHeight/logo.naturalWidth);text('圓盤系統支撐架產品數量表',margin,82,24,'#164c43','left',true);y=128;
     const leftWidth=(W-margin*2)*.64,rightX=margin+leftWidth+24,rightWidth=W-margin-rightX;
     y+=Math.max(wrapped(`客戶名稱：${data.customer||'—'}`,margin,y,leftWidth),wrapped(`日期：${data.date||'—'}`,rightX,y,rightWidth))+8;
-    y+=Math.max(wrapped(`工程名稱：${data.project||'—'}`,margin,y,leftWidth),wrapped(`製表人：${data.author||'—'}`,rightX,y,rightWidth))+22;
+    y+=Math.max(wrapped(`工程名稱：${data.project||'—'}`,margin,y,leftWidth),wrapped(`負責業務：${data.salesperson||'—'}`,rightX,y,rightWidth))+8;
+    y+=wrapped(`製表人：${data.author||'—'}`,rightX,y,rightWidth)+22;
     const content=columns.map(c=>lines(c.name,c.width-16,10)),height=Math.max(34,...content.map(list=>list.length*17+16));ctx.fillStyle='#edf2e8';ctx.fillRect(margin,y,W-margin*2,height);
     columns.forEach((c,i)=>content[i].forEach((line,j)=>text(line,c.number?c.x+c.width-8:c.x+8,y+9+j*17,10,'#365544',c.number?'right':'left',true)));y+=height;
   }
@@ -1341,12 +1345,12 @@ const validQuantity=value=>/^\d+$/.test(value)&&Number(value)<=999999;
 const validWeight=value=>/^(?:\d+(?:\.\d{1,3})?|\.\d{1,3})$/.test(value)&&Number(value)<=999999.999;
 const rowWeight=row=>row.weight===''?null:Math.round(Number(row.weight)*1000)*Number(row.quantity)/1000;
 const catalogRow=item=>({id:id(),catalogId:item.id,code:item.code,name:item.name,spec:item.spec,weight:item.weight,quantity:'0',extra:{}});
-let state={customer:'',project:'',date:today(),author:'',notes:'',catalogVersion:'',columns:[],archivedRows:[],rows:[]};
+let state={customer:'',project:'',date:today(),salesperson:'',author:'',notes:'',catalogVersion:'',columns:[],archivedRows:[],rows:[]};
 let storageAvailable=true,previewBusy=false;
 try{
   const data=JSON.parse(localStorage.getItem(STORE));
   if(data&&Array.isArray(data.rows)){
-    for(const key of ['customer','project','date','author','notes'])if(typeof data[key]==='string')state[key]=data[key];
+    for(const key of ['customer','project','date','salesperson','author','notes'])if(typeof data[key]==='string')state[key]=data[key];
     state.catalogVersion=typeof data.catalogVersion==='string'?data.catalogVersion:'';
     state.columns=Array.isArray(data.columns)?data.columns.filter((c,i,a)=>c&&typeof c.id==='string'&&/^col_[a-z0-9-]+$/.test(c.id)&&typeof c.name==='string'&&c.name.trim()&&a.findIndex(x=>x?.id===c.id)===i).slice(0,6).map(c=>({id:c.id,name:c.name.trim().slice(0,20)})):[];
     state.archivedRows=Array.isArray(data.archivedRows)?data.archivedRows:[];
@@ -1421,7 +1425,7 @@ $('rows').addEventListener('click',event=>{
   if(!event.target.closest('.delete'))return;const index=state.rows.findIndex(r=>r.id===event.target.closest('tr').dataset.id);if(index<0)return;
   const row=state.rows[index];state.rows.splice(index,1);renderRows();save();showUndo(`已刪除品項「${row.name||row.code||'未命名'}」`,()=>{if(!state.rows.some(r=>r.id===row.id))state.rows.splice(Math.min(index,state.rows.length),0,row);});
 });
-for(const key of ['customer','project','date','author','notes']){$(key).value=state[key];$(key).addEventListener('input',()=>{state[key]=$(key).value;save();});}
+for(const key of ['customer','project','date','salesperson','author','notes']){$(key).value=state[key];$(key).addEventListener('input',()=>{state[key]=$(key).value;save();});}
 $('addColumn').addEventListener('click',()=>{if(state.columns.length>=6){toast('最多新增 6 個文字欄位。');return;}$('columnError').textContent='';$('columnName').value='';$('columnDialog').showModal();$('columnName').focus();});
 $('cancelColumn').addEventListener('click',()=>$('columnDialog').close());
 $('columnForm').addEventListener('submit',event=>{
@@ -1444,7 +1448,7 @@ function renderPrint(data){
   $('printPageStyle').textContent=`@page{size:A4 ${data.columns.length?'landscape':'portrait'};margin:15mm 12mm}`;
   const colspan=6+data.columns.length;
   const title=`<img class="report-logo" src="${esc($('companyLogo').src)}" alt="SUCOOT 實固股份有限公司"><h1 class="print-heading">圓盤系統支撐架產品數量表</h1>`;
-  const meta=`<div class="print-meta"><span>客戶名稱：${esc(data.customer||'—')}</span><span>日期：${esc(data.date||'—')}</span><span>工程名稱：${esc(data.project||'—')}</span><span>製表人：${esc(data.author||'—')}</span></div>`;
+  const meta=`<div class="print-meta"><span>客戶名稱：${esc(data.customer||'—')}</span><span>日期：${esc(data.date||'—')}</span><span>工程名稱：${esc(data.project||'—')}</span><span>負責業務：${esc(data.salesperson||'—')}</span><span class="author-meta">製表人：${esc(data.author||'—')}</span></div>`;
   const headers=['品項編號','品項名稱','規格','數量（件）','單重（kg）','總重量（kg）',...data.columns.map(c=>c.name)].map((name,i)=>`<th${i>=3&&i<=5?' class="number"':''}>${esc(name)}</th>`).join('');
   const body=data.rows.map(r=>`<tr><td>${esc(r.code)}</td><td>${esc(r.name)}</td><td>${esc(r.spec||'—')}</td><td class="number">${fmt(Number(r.quantity),0)}</td><td class="number">${r.weight===''?'待填':fmt(Number(r.weight))}</td><td class="number">${r.weight===''?'待填':fmt(rowWeight(r))}</td>${data.columns.map(c=>`<td>${esc(r.extra?.[c.id]||'—')}</td>`).join('')}</tr>`).join('');
   const summary=`<div class="print-summary"><strong>已知總重量：${fmt(data.sum.grams/1000)} kg</strong>${data.sum.pending?`<br>注意：${data.sum.pending} 項缺少單重，未計入總重量。`:''}</div>${data.notes?`<div class="print-notes">備註：${esc(data.notes)}</div>`:''}<p class="print-caption">${reportCaption}</p>`;

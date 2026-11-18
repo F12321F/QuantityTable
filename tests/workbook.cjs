@@ -38,9 +38,9 @@ const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{re
     // Isolated manual-entry fixture.
     await page.evaluate(()=>localStorage.setItem('ringlock-quantity-v1',JSON.stringify({catalogVersion:window.SUCOOT_CATALOG.version,rows:[]})));
     await page.reload();
-    await page.locator('#customer').fill('測試客戶股份有限公司');await page.locator('#project').fill('跨頁測試工程');await page.locator('#author').fill('測試製表人');await page.locator('#date').fill('2026-11-18');
-    const info=await page.evaluate(()=>Object.fromEntries(['customer','date','project','author'].map(id=>{const r=document.getElementById(id).getBoundingClientRect();return[id,{x:r.x,y:r.y}];})));
-    assert.equal(info.customer.x,info.project.x);assert.equal(info.date.x,info.author.x);assert.equal(info.customer.y,info.date.y);assert.equal(info.project.y,info.author.y);assert.ok(info.customer.x<info.date.x);
+    await page.locator('#customer').fill('測試客戶股份有限公司');await page.locator('#project').fill('跨頁測試工程');await page.locator('#salesperson').fill('測試業務');await page.locator('#author').fill('測試製表人');await page.locator('#date').fill('2026-11-18');
+    const info=await page.evaluate(()=>Object.fromEntries(['customer','date','project','salesperson','author'].map(id=>{const r=document.getElementById(id).getBoundingClientRect();return[id,{x:r.x,y:r.y}];})));
+    assert.equal(info.customer.x,info.project.x);assert.equal(info.date.x,info.author.x);assert.equal(info.customer.y,info.date.y);assert.equal(info.project.y,info.salesperson.y);assert.equal(info.date.x,info.salesperson.x);assert.equal(info.date.x,info.author.x);assert.ok(info.date.y<info.salesperson.y);assert.ok(info.salesperson.y<info.author.y);assert.ok(info.customer.x<info.date.x);
     assert.equal(await page.locator('.stats').count(),0);
     async function add(code,quantity,weight){
       await page.locator('#addRow').click();const row=page.locator('#rows tr').last();
@@ -51,7 +51,7 @@ const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{re
     const weight=page.locator('#rows tr').last().locator('[data-field=weight]');await weight.fill('-1');assert.equal(await page.locator('#pdf').isDisabled(),true);
     await weight.fill('0.1234');assert.equal(await page.locator('#pdf').isDisabled(),true);await weight.fill('0');assert.match(await page.locator('#rows tr').last().locator('.row-weight').textContent(),/0\.000/);
     await weight.fill('2.5');assert.match(await page.locator('#tableWeight').textContent(),/35\.375/);
-    await page.reload();assert.equal(await page.locator('#customer').inputValue(),'測試客戶股份有限公司');assert.match(await page.locator('#tableWeight').textContent(),/35\.375/);
+    await page.reload();assert.equal(await page.locator('#customer').inputValue(),'測試客戶股份有限公司');assert.equal(await page.locator('#salesperson').inputValue(),'測試業務');assert.match(await page.locator('#tableWeight').textContent(),/35\.375/);
     await page.setViewportSize({width:390,height:844});
     assert.ok(await page.locator('#rows .delete').last().evaluate(e=>{const r=e.getBoundingClientRect();return r.left>=0&&r.right<=innerWidth;}));
     await page.locator('#rows .delete').last().click();assert.equal(await page.locator('#rows tr').count(),1);
@@ -67,11 +67,11 @@ const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{re
     await page.setViewportSize({width:1440,height:1100});await page.screenshot({path:path.join(results,'worksheet.png'),fullPage:true});
     // Every default row is used to exercise real multi-page reports.
     await page.locator('#restoreCatalog').click();await page.evaluate(()=>{const data=JSON.parse(localStorage.getItem('ringlock-quantity-v1'));data.rows=data.rows.filter(r=>r.catalogId);data.rows.forEach(r=>r.quantity='1');data.notes='跨頁備註測試。'.repeat(50);localStorage.setItem('ringlock-quantity-v1',JSON.stringify(data));});await page.reload();
-    await page.evaluate(()=>{window.headerCalls=[];const original=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(value,...args){if(String(value).startsWith('客戶名稱：')||String(value).startsWith('工程名稱：'))window.headerCalls.push(value);return original.call(this,value,...args);};});
+    await page.evaluate(()=>{window.headerCalls=[];const original=CanvasRenderingContext2D.prototype.fillText;CanvasRenderingContext2D.prototype.fillText=function(value,...args){if(String(value).startsWith('客戶名稱：')||String(value).startsWith('工程名稱：')||String(value).startsWith('負責業務：'))window.headerCalls.push(value);return original.call(this,value,...args);};});
     async function preview(mode){
       await page.evaluate(()=>window.headerCalls=[]);await page.locator('#preview').click();await page.waitForFunction(()=>!document.getElementById('previewDownload').disabled);
       const count=await page.locator('.preview-page').count();assert.ok(count>1);const calls=await page.evaluate(()=>window.headerCalls);
-      assert.equal(calls.filter(s=>s==='客戶名稱：測試客戶股份有限公司').length,count);assert.equal(calls.filter(s=>s==='工程名稱：跨頁測試工程').length,count);
+      assert.equal(calls.filter(s=>s==='客戶名稱：測試客戶股份有限公司').length,count);assert.equal(calls.filter(s=>s==='工程名稱：跨頁測試工程').length,count);assert.equal(calls.filter(s=>s==='負責業務：測試業務').length,count);
       const images=await page.locator('.preview-page img').evaluateAll(imgs=>imgs.map(i=>i.src));
       await page.locator('#previewZoom').selectOption('150');assert.equal(await page.locator('#previewPages').getAttribute('data-zoom'),'150');await page.locator('#previewZoom').selectOption('fit');
       const download=page.waitForEvent('download');await page.locator('#previewDownload').click();const target=path.join(results,`preview-${mode}.pdf`);await(await download).saveAs(target);
