@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="zh-Hant">
+<html lang="zh-Hant" data-locked="true">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#164c43"><title>圓盤系統支撐架｜產品數量表</title>
@@ -12,10 +12,12 @@
   <script src="pwa.js" defer></script>
   <!-- PWA_END -->
   <link rel="stylesheet" href="styles.css">
+  <script src="password-utils.js" defer></script><script src="access.js" defer></script>
   <script src="catalog.js" defer></script><script src="pdf.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
-<header class="topbar"><a class="brand" href="./"><img id="companyLogo" src="assets/sucoot-logo.png" width="206" height="33" alt="SUCOOT 實固股份有限公司"><span>支撐架數量表<small>QUANTITY WORKSHEET</small></span></a><span class="local-badge">● 本機作業 · 無須登入</span></header>
+<header class="topbar"><a class="brand" href="./"><img id="companyLogo" src="assets/sucoot-logo.png" width="206" height="33" alt="SUCOOT 實固股份有限公司"><span>支撐架數量表<small>QUANTITY WORKSHEET</small></span></a><div class="access-actions"><span class="local-badge">● 本機作業</span><button id="lockWorksheet" type="button" hidden>鎖定</button></div></header>
+<section id="authGate" class="auth-gate" role="dialog" aria-modal="true" aria-labelledby="authTitle"><div class="auth-card"><img src="assets/sucoot-logo.png" width="206" height="33" alt="SUCOOT 實固股份有限公司"><h1 id="authTitle">開啟數量表</h1><p id="accessStatus" role="status">正在讀取開啟設定…</p><form id="unlockForm"><label>共用開啟密碼<input id="openingPassword" type="password" maxlength="128" autocomplete="current-password" disabled required></label><p id="unlockError" role="alert"></p><button id="unlockButton" type="submit" class="primary" disabled>開啟數量表</button></form><small>忘記密碼請洽管理者。此功能為簡易防誤用限制，表單資料保存在本機。</small></div></section>
 <main>
   <section class="intro"><p class="eyebrow">MATERIAL PLANNING / 圓盤系統</p><h1>每個品項，清楚計算。</h1><p>圓盤系統支撐架產品數量表，從備料到出貨一次整理。</p></section>
   <aside class="source-note"><strong>已依型錄及補充資料列出 66 個品項／規格</strong><p>來源：7527.pdf（2025/11）及使用者補充品號。「自編」非官方品號，未載單重可自行填寫。爬梯踏板 48 kg 為約重；鋁製爬梯整組 16.53 kg 含螺絲與扶手。</p><details><summary>品項整理說明</summary><p>定位桿僅列 L61815、L62415；主架、平主架及橫桿依長度分列。斜桿 D6 編碼先橫向、後高度。型錄未提供的尺寸與單重不推估。升級時移除的舊品項保留於本機資料備份。</p></details></aside>

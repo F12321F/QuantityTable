@@ -108,7 +108,7 @@ function removeColumn(event){
 $('columnList').addEventListener('click',removeColumn);$('rows').closest('table').tHead.addEventListener('click',removeColumn);
 function download(blob,filename){const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download=filename;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
 $('backup').addEventListener('click',()=>download(new Blob([JSON.stringify(state,null,2)],{type:'application/json'}),'支撐架數量表備份.json'));
-function reportData(){if(state.rows.some(invalidRow)||!activeRows().length)throw new Error('請先填妥品項資料，並至少填入一項大於 0 的數量。');return {...state,rows:activeRows(),sum:totals()};}
+function reportData(){if(window.worksheetAccess?.locked)throw new Error('請先輸入開啟密碼');if(state.rows.some(invalidRow)||!activeRows().length)throw new Error('請先填妥品項資料，並至少填入一項大於 0 的數量。');return {...state,rows:activeRows(),sum:totals()};}
 function pdfFilename(data){return `${(data.project||'圓盤系統支撐架數量表').replace(/[\\/:*?"<>|\u0000-\u001f]/g,'_')}_${data.date||today()}.pdf`;}
 const reportCaption='初始品項依實固型錄 7527.pdf（2025/11）及使用者補充品號整理，可自訂新增及編修。「自編」非官方品號；缺重不計入總重。48 kg 為爬梯踏板約值；16.53 kg 為含螺絲與扶手的鋁製爬梯整組。';
 function renderPrint(data){
