@@ -1,0 +1,3342 @@
+[
+  {
+    "page": 1,
+    "no": 1,
+    "code": "V60100",
+    "name": "平主架",
+    "spec": "∅60.2mm T:3.2mm 1.0m",
+    "qty": "0",
+    "weight": "5.75",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 2,
+    "code": "V60150",
+    "name": "平主架",
+    "spec": "∅60.2mm T:3.2mm 1.5m",
+    "qty": "0",
+    "weight": "8.63",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 3,
+    "code": "V60200",
+    "name": "平主架",
+    "spec": "∅60.2mm T:3.2mm 2.0m",
+    "qty": "0",
+    "weight": "11.42",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 4,
+    "code": "V60300",
+    "name": "平主架",
+    "spec": "∅60.2mm T:3.2mm 3.0m",
+    "qty": "0",
+    "weight": "17.40",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 5,
+    "code": "V61100",
+    "name": "主架",
+    "spec": "∅60.2mm T:3.2mm 1.0m",
+    "qty": "0",
+    "weight": "6.80",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 6,
+    "code": "V61150",
+    "name": "主架",
+    "spec": "∅60.2mm T:3.2mm 1.5m",
+    "qty": "0",
+    "weight": "9.45",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 7,
+    "code": "V61200",
+    "name": "主架",
+    "spec": "∅60.2mm T:3.2mm 2.0m",
+    "qty": "0",
+    "weight": "12.47",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 8,
+    "code": "V61300",
+    "name": "主架",
+    "spec": "∅60.2mm T:3.2mm 3.0m",
+    "qty": "0",
+    "weight": "18.45",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 9,
+    "code": "V62020",
+    "name": "標準基座",
+    "spec": "∅60.2mm T:3.2mm 0.2m",
+    "qty": "0",
+    "weight": "2.20",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 10,
+    "code": "V62025",
+    "name": "輔助桿",
+    "spec": "∅60.2mm T:3.2mm 0.25m",
+    "qty": "0",
+    "weight": "2.28",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 11,
+    "code": "V62050",
+    "name": "輔助桿",
+    "spec": "∅60.2mm T:3.2mm 0.5m",
+    "qty": "0",
+    "weight": "3.38",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 12,
+    "code": "H66060",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 0.6m",
+    "qty": "0",
+    "weight": "2.40",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 13,
+    "code": "H66090",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 0.9m",
+    "qty": "0",
+    "weight": "3.22",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 14,
+    "code": "H66120",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 1.2m",
+    "qty": "0",
+    "weight": "3.78",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 15,
+    "code": "H66150",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 1.5m",
+    "qty": "0",
+    "weight": "4.85",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 16,
+    "code": "H66180",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 1.8m",
+    "qty": "0",
+    "weight": "5.67",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 17,
+    "code": "H66240",
+    "name": "橫桿",
+    "spec": "∅48.6mm T:2.3mm 2.4m",
+    "qty": "0",
+    "weight": "7.30",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 18,
+    "code": "D60610",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 0.6 × 1.0m",
+    "qty": "0",
+    "weight": "4.45",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 19,
+    "code": "D60910",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 0.9 × 1.0m",
+    "qty": "0",
+    "weight": "4.84",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 20,
+    "code": "D61510",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 1.5 × 1.0m",
+    "qty": "0",
+    "weight": "5.96",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 21,
+    "code": "D61810",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 1.8 × 1.0m",
+    "qty": "0",
+    "weight": "6.62",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 22,
+    "code": "D60615",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 0.6 × 1.5m",
+    "qty": "0",
+    "weight": "5.74",
+    "total": "0.00"
+  },
+  {
+    "page": 1,
+    "no": 23,
+    "code": "D60915",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 0.9 × 1.5m",
+    "qty": "0",
+    "weight": "6.00",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 24,
+    "code": "D61215",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 1.2 × 1.5m",
+    "qty": "0",
+    "weight": "6.32",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 25,
+    "code": "D61515",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 1.5 × 1.5m",
+    "qty": "0",
+    "weight": "6.89",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 26,
+    "code": "D61815",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 1.8 × 1.5m",
+    "qty": "0",
+    "weight": "7.46",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 27,
+    "code": "D62415",
+    "name": "斜桿",
+    "spec": "∅48.6mm T:2.3mm 2.4 × 1.5m",
+    "qty": "0",
+    "weight": "8.71",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 28,
+    "code": "L61515",
+    "name": "定位桿",
+    "spec": "∅48.6mm T:2.3mm 1.5 × 1.5m",
+    "qty": "0",
+    "weight": "6.54",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 29,
+    "code": "L61815",
+    "name": "定位桿",
+    "spec": "∅48.6mm T:2.3mm 1.8 × 1.5m",
+    "qty": "0",
+    "weight": "7.14",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 30,
+    "code": "L62415",
+    "name": "定位桿",
+    "spec": "∅48.6mm T:2.3mm 2.4 × 1.5m",
+    "qty": "0",
+    "weight": "8.05",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 31,
+    "code": "L61818",
+    "name": "定位桿",
+    "spec": "∅48.6mm T:2.3mm 1.8 × 1.8m",
+    "qty": "0",
+    "weight": "7.70",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 32,
+    "code": "J48601",
+    "name": "調整座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "4.91",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 33,
+    "code": "U48601",
+    "name": "Ｕ型調整座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "5.96",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 34,
+    "code": "J48600S",
+    "name": "活動座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "6.72",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 35,
+    "code": "U48600S",
+    "name": "Ｕ型活動座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "7.42",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 36,
+    "code": "J60350",
+    "name": "下底座",
+    "spec": "∅60.2mm T:3.2mm 0.35m",
+    "qty": "0",
+    "weight": "3.04",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 37,
+    "code": "S61815",
+    "name": "爬梯",
+    "spec": "H:1.5m × W:1.8m",
+    "qty": "0",
+    "weight": "35.56",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 38,
+    "code": "S62415",
+    "name": "爬梯",
+    "spec": "H:1.5m × W:2.4m(不含鎖扣)",
+    "qty": "0",
+    "weight": "53.14",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 39,
+    "code": "",
+    "name": "扶手",
+    "spec": "H:1.5m × W:1.8m/2.4m通用",
+    "qty": "0",
+    "weight": "6.40",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 40,
+    "code": "SL-36",
+    "name": "哲管",
+    "spec": "2-3/4\"",
+    "qty": "0",
+    "weight": "0.06",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 41,
+    "code": "SL-45A",
+    "name": "哲管",
+    "spec": "4\"",
+    "qty": "0",
+    "weight": "0.09",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 42,
+    "code": "",
+    "name": "爬梯鎖扣",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.71",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 43,
+    "code": "",
+    "name": "雙C樑架",
+    "spec": "(不含SL)",
+    "qty": "0",
+    "weight": "26.16",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 44,
+    "code": "A69001",
+    "name": "連接棒",
+    "spec": "∅60.2mm用",
+    "qty": "0",
+    "weight": "1.10",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 45,
+    "code": "",
+    "name": "快速橫桿接頭",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.69",
+    "total": "0.00"
+  },
+  {
+    "page": 2,
+    "no": 46,
+    "code": "",
+    "name": "萬向活動平面調整座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "6.72",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 47,
+    "code": "",
+    "name": "萬向活動Ｕ型調整座",
+    "spec": "∅48.2 × 600mmL T:5mm",
+    "qty": "0",
+    "weight": "7.72",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 48,
+    "code": "F26018",
+    "name": "腳踏板",
+    "spec": "260 × 1800mm",
+    "qty": "0",
+    "weight": "11.20",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 49,
+    "code": "F53018",
+    "name": "腳踏板",
+    "spec": "530 × 1800mm",
+    "qty": "0",
+    "weight": "18.20",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 50,
+    "code": "F26512",
+    "name": "腳踏板",
+    "spec": "265 × 1200mm",
+    "qty": "0",
+    "weight": "6.60",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 51,
+    "code": "F26515",
+    "name": "腳踏板",
+    "spec": "265 × 1500mm",
+    "qty": "0",
+    "weight": "8.02",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 52,
+    "code": "F26518",
+    "name": "腳踏板",
+    "spec": "265 × 1800mm",
+    "qty": "0",
+    "weight": "9.36",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 53,
+    "code": "F55012",
+    "name": "腳踏板",
+    "spec": "550 × 1200mm",
+    "qty": "0",
+    "weight": "13.06",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 54,
+    "code": "F55015",
+    "name": "腳踏板",
+    "spec": "550 × 1500mm",
+    "qty": "0",
+    "weight": "15.62",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 55,
+    "code": "F55018",
+    "name": "腳踏板",
+    "spec": "550 × 1800mm",
+    "qty": "0",
+    "weight": "18.24",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 56,
+    "code": "L6-F26512CP-1",
+    "name": "蓋板",
+    "spec": "265 × 1200mm 熱浸",
+    "qty": "0",
+    "weight": "6.93",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 57,
+    "code": "L6-F26515CP-1",
+    "name": "蓋板",
+    "spec": "265 × 1500mm 熱浸",
+    "qty": "0",
+    "weight": "8.15",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 58,
+    "code": "",
+    "name": "蓋板",
+    "spec": "265 × 1800mm 熱浸",
+    "qty": "0",
+    "weight": "9.52",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 59,
+    "code": "HS2001",
+    "name": "加勁板",
+    "spec": "200mm × 100mm (片)",
+    "qty": "0",
+    "weight": "6.50",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 60,
+    "code": "HS2010",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 1mL",
+    "qty": "0",
+    "weight": "21.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 61,
+    "code": "HS2015",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 1.5mL",
+    "qty": "0",
+    "weight": "31.50",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 62,
+    "code": "HS2020",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 2.0mL",
+    "qty": "0",
+    "weight": "42.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 63,
+    "code": "HS2030",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 3mL",
+    "qty": "0",
+    "weight": "63.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 64,
+    "code": "HS2040",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 4mL",
+    "qty": "0",
+    "weight": "84.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 65,
+    "code": "HS2045",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 4.5mL",
+    "qty": "0",
+    "weight": "94.50",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 66,
+    "code": "HS2050",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 5mL",
+    "qty": "0",
+    "weight": "105.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 67,
+    "code": "HS2060",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 6mL",
+    "qty": "0",
+    "weight": "126.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 68,
+    "code": "HS2080",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 8mL",
+    "qty": "0",
+    "weight": "168.00",
+    "total": "0.00"
+  },
+  {
+    "page": 3,
+    "no": 69,
+    "code": "HS2090",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 9mL",
+    "qty": "0",
+    "weight": "189.00",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 70,
+    "code": "HS2100",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 10mL",
+    "qty": "0",
+    "weight": "210.00",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 71,
+    "code": "HS2110",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 11mL",
+    "qty": "0",
+    "weight": "231.00",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 72,
+    "code": "HS2120",
+    "name": "H型鋼",
+    "spec": "200mm × 100mm × 12mL",
+    "qty": "0",
+    "weight": "252.00",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 73,
+    "code": "",
+    "name": "H型鋼",
+    "spec": "150mm × 75mm × 1mL",
+    "qty": "0",
+    "weight": "16.90",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 74,
+    "code": "",
+    "name": "H型鋼",
+    "spec": "150mm × 75mm × 2mL",
+    "qty": "0",
+    "weight": "28.00",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 75,
+    "code": "",
+    "name": "H型鋼",
+    "spec": "150mm × 75mm × 3mL",
+    "qty": "0",
+    "weight": "50.70",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 76,
+    "code": "",
+    "name": "H型鋼",
+    "spec": "150mm × 75mm ×4mL",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 77,
+    "code": "",
+    "name": "H型鋼",
+    "spec": "150mm × 75mm × 6mL",
+    "qty": "0",
+    "weight": "101.40",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 78,
+    "code": "",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=0.15m",
+    "qty": "0",
+    "weight": "6.68",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 79,
+    "code": "",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=0.3m",
+    "qty": "0",
+    "weight": "8.70",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 80,
+    "code": "",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=0.45m",
+    "qty": "0",
+    "weight": "10.86",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 81,
+    "code": "BB201606",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=0.6m",
+    "qty": "0",
+    "weight": "13.36",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 82,
+    "code": "BB201609",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=0.9m",
+    "qty": "0",
+    "weight": "18.18",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 83,
+    "code": "BB201612",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=1.2m",
+    "qty": "0",
+    "weight": "22.25",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 84,
+    "code": "BB201615",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=1.5m",
+    "qty": "0",
+    "weight": "27.63",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 85,
+    "code": "BB201618",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=1.8m",
+    "qty": "0",
+    "weight": "32.78",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 86,
+    "code": "BB201621",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=2.1m",
+    "qty": "0",
+    "weight": "37.58",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 87,
+    "code": "BB201624",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=2.4m",
+    "qty": "0",
+    "weight": "42.70",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 88,
+    "code": "BB201627",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=2.7m",
+    "qty": "0",
+    "weight": "47.30",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 89,
+    "code": "BB201630",
+    "name": "蜂巢鋼",
+    "spec": "200×161 mm L=3.0m",
+    "qty": "0",
+    "weight": "52.30",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 90,
+    "code": "",
+    "name": "蜂巢鋼 螺絲",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.08",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 91,
+    "code": "",
+    "name": "蜂巢鋼 螺母",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.02",
+    "total": "0.00"
+  },
+  {
+    "page": 4,
+    "no": 92,
+    "code": "",
+    "name": "蜂巢鋼 螺絲(A325)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.08",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 93,
+    "code": "",
+    "name": "蜂巢鋼 螺母(A325)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.02",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 94,
+    "code": "DB100812",
+    "name": "鐵木樑",
+    "spec": "100×80 mm L=1.2m",
+    "qty": "0",
+    "weight": "8.74",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 95,
+    "code": "DB100812",
+    "name": "鐵木樑",
+    "spec": "100×80 mm L=1.5m",
+    "qty": "0",
+    "weight": "10.75",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 96,
+    "code": "DB100818",
+    "name": "鐵木樑",
+    "spec": "100×80 mm L=1.8m",
+    "qty": "0",
+    "weight": "12.74",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 97,
+    "code": "DB100824",
+    "name": "鐵木樑",
+    "spec": "100×80 mm L=2.4m",
+    "qty": "0",
+    "weight": "17.03",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 98,
+    "code": "DB100830",
+    "name": "鐵木樑",
+    "spec": "100×80 mm L=3.0m",
+    "qty": "0",
+    "weight": "21.17",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 99,
+    "code": "",
+    "name": "鐵木樑 螺絲",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 100,
+    "code": "",
+    "name": "鐵木樑 螺母",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 101,
+    "code": "(1版)",
+    "name": "三角背撐架",
+    "spec": "上層H=0.97m",
+    "qty": "0",
+    "weight": "40.10",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 102,
+    "code": "(1版)",
+    "name": "三角背撐架",
+    "spec": "中層H=3.7m",
+    "qty": "0",
+    "weight": "390.00",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 103,
+    "code": "(1版)",
+    "name": "三角背撐架",
+    "spec": "下層H=1.5m",
+    "qty": "0",
+    "weight": "320.00",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 104,
+    "code": "(1版)",
+    "name": "三角背撐架",
+    "spec": "三角背撐架組(成品)熱浸含上、中、下層",
+    "qty": "0",
+    "weight": "750.10",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 105,
+    "code": "(1版)",
+    "name": "三角背撐架螺絲螺母組",
+    "spec": "螺絲組(單片需20set)",
+    "qty": "0",
+    "weight": "0.18",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 106,
+    "code": "(1版)",
+    "name": "三角背撐架下調整座組",
+    "spec": "下調整座+調整座螺母Ø63×450mm",
+    "qty": "0",
+    "weight": "19.40",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 107,
+    "code": "FA-C0017-1",
+    "name": "三角背撐架",
+    "spec": "上層H=0.75m",
+    "qty": "0",
+    "weight": "35.07",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 108,
+    "code": "FA-C0018-1",
+    "name": "三角背撐架",
+    "spec": "中層H=4.0m",
+    "qty": "0",
+    "weight": "413.94",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 109,
+    "code": "FA-C0019-1",
+    "name": "三角背撐架",
+    "spec": "下層H=1.5m",
+    "qty": "0",
+    "weight": "246.86",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 110,
+    "code": "(新版-輕量化)",
+    "name": "三角背撐架",
+    "spec": "三角背撐架組(成品)熱浸含上、中、下層",
+    "qty": "0",
+    "weight": "695.87",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 111,
+    "code": "FA-C0027-5",
+    "name": "前下調整座",
+    "spec": "下調整座Ø63×460mm成品 實心藍漆",
+    "qty": "0",
+    "weight": "21.99",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 112,
+    "code": "FA-C0023-5",
+    "name": "銜接底座版-直",
+    "spec": "前方L型下調銜接版(成品)藍漆",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 113,
+    "code": "FA-C0026-5",
+    "name": "後下調整座",
+    "spec": "下調整座Ø63×460mm成品 實心藍漆",
+    "qty": "0",
+    "weight": "20.88",
+    "total": "0.00"
+  },
+  {
+    "page": 5,
+    "no": 114,
+    "code": "FA-C0024-5",
+    "name": "銜接底座版-斜",
+    "spec": "後方下調銜接版(成品)藍漆",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 115,
+    "code": "",
+    "name": "三角背撐架-螺絲(A325)",
+    "spec": "(若加華司，需注意螺絲長度是否足夠)",
+    "qty": "0",
+    "weight": "0.13",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 116,
+    "code": "",
+    "name": "三角背撐架-螺母(A325)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.05",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 117,
+    "code": "",
+    "name": "三角背撐架-華司",
+    "spec": "(看業務需求，新版背架孔徑為18mm，\n與蜂巢鋼孔徑相同)",
+    "qty": "0",
+    "weight": "0.00",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 118,
+    "code": "",
+    "name": "三角背撐架 壓梁",
+    "spec": "雙C槽鋼150×75×6.5mm，L=2.2m",
+    "qty": "0",
+    "weight": "80.00",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 119,
+    "code": "FA-B15075652400-1",
+    "name": "三角背撐架 壓梁",
+    "spec": "雙C槽鋼150×75×6.5×10mm，L=2.4m",
+    "qty": "0",
+    "weight": "87.62",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 120,
+    "code": "",
+    "name": "吊點-螺絲及螺帽",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.22",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 121,
+    "code": "或",
+    "name": "吊點-螺絲及螺帽(A325)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.24",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 122,
+    "code": "",
+    "name": "斜撐(Push Pull)",
+    "spec": "1.0m~1.7m(外管φ60mm × 3.5t)",
+    "qty": "0",
+    "weight": "10.43",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 123,
+    "code": "",
+    "name": "斜撐(Push Pull)",
+    "spec": "1.7m~2.5m(外管φ60mm × 3.5t)",
+    "qty": "0",
+    "weight": "14.41",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 124,
+    "code": "",
+    "name": "斜撐(Push Pull)",
+    "spec": "2.5m~3.2m(外管φ76mm × 4.5t)",
+    "qty": "0",
+    "weight": "25.50",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 125,
+    "code": "",
+    "name": "斜撐(Push Pull)",
+    "spec": "3.2m~3.9m(外管φ76mm × 4.5t)",
+    "qty": "0",
+    "weight": "31.10",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 126,
+    "code": "",
+    "name": "斜撐(Push Pull)",
+    "spec": "3.9m~4.5m(外管φ76mm × 4.5t)",
+    "qty": "0",
+    "weight": "36.75",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 127,
+    "code": "",
+    "name": "斜撐底座",
+    "spec": "(標)活動調整座下底板熱浸",
+    "qty": "0",
+    "weight": "2.48",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 128,
+    "code": "",
+    "name": "斜撐底座",
+    "spec": "100×100mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 129,
+    "code": "",
+    "name": "斜撐底座",
+    "spec": "200×161mm×10t 孔21mm 熱浸/藍\n漆",
+    "qty": "0",
+    "weight": "2.67",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 130,
+    "code": "特製品",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L0.9m",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 131,
+    "code": "TP12",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L1.2m",
+    "qty": "0",
+    "weight": "6.54",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 132,
+    "code": "TP15",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L1.5m",
+    "qty": "0",
+    "weight": "8.36",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 133,
+    "code": "TP18",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L1.8m",
+    "qty": "0",
+    "weight": "9.88",
+    "total": "0.00"
+  },
+  {
+    "page": 6,
+    "no": 134,
+    "code": "TP24",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L2.4m",
+    "qty": "0",
+    "weight": "13.26",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 135,
+    "code": "TP30",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L3.0m",
+    "qty": "0",
+    "weight": "16.32",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 136,
+    "code": "TP36",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L3.6m",
+    "qty": "0",
+    "weight": "19.84",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 137,
+    "code": "TP42",
+    "name": "Top Beam",
+    "spec": "135 × 50 × t2.3mm L4.2m",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 138,
+    "code": "TP-B",
+    "name": "固定器-蜂巢鋼",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.17",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 139,
+    "code": "TP-H",
+    "name": "固定器-H型鋼",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.22",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 140,
+    "code": "TB-37",
+    "name": "SL-37S",
+    "spec": "L=69mm",
+    "qty": "0",
+    "weight": "0.03",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 141,
+    "code": "TB-TS",
+    "name": "十字鑽尾螺絲",
+    "spec": "200pcs",
+    "qty": "0",
+    "weight": "1.00",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 142,
+    "code": "TB-SB",
+    "name": "底座",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.19",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 143,
+    "code": "TB-JP",
+    "name": "Top Beam 連接器",
+    "spec": "L=240mm",
+    "qty": "0",
+    "weight": "1.99",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 144,
+    "code": "",
+    "name": "Top Beam 角材固定器",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 145,
+    "code": "",
+    "name": "Top Beam 連接器 螺絲",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 146,
+    "code": "",
+    "name": "Top Beam 連接器 螺母",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 147,
+    "code": "特製品",
+    "name": "Top Beam 轉角連接器",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 148,
+    "code": "",
+    "name": "固定木樑夾",
+    "spec": "固定式木樑夾 電",
+    "qty": "0",
+    "weight": "0.35",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 149,
+    "code": "",
+    "name": "活動木樑夾",
+    "spec": "活動式木樑夾 電",
+    "qty": "0",
+    "weight": "0.44",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 150,
+    "code": "",
+    "name": "蜂巢鋼調整器",
+    "spec": "(左牙&右牙)",
+    "qty": "0",
+    "weight": "8.74",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 151,
+    "code": "H7-B20160T-5",
+    "name": "蜂巢鋼連接器",
+    "spec": "200×161mm 用A型，藍漆",
+    "qty": "0",
+    "weight": "3.60",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 152,
+    "code": "",
+    "name": "90度蜂巢鋼斜撐底座",
+    "spec": "110×90×9t 藍漆/熱浸",
+    "qty": "0",
+    "weight": "1.75",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 153,
+    "code": "特製品",
+    "name": "蜂巢鋼弧型連接器",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 154,
+    "code": "特製品",
+    "name": "蜂巢鋼T型連接器(皇昌)",
+    "spec": "蜂巢鋼連接器200×161mm用 兩孔",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 7,
+    "no": 155,
+    "code": "H7-B20160T-5",
+    "name": "蜂巢鋼T型連接器(海口)",
+    "spec": "蜂巢鋼連接器200×161mm用 A型\n橘漆 兩孔",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 156,
+    "code": "H7-B200161T3-5",
+    "name": "蜂巢鋼T型連接器(海口)",
+    "spec": "蜂巢鋼連接器200×161mm用 A型\n橘漆 三孔",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 157,
+    "code": "H7-B20016110-5",
+    "name": "蜂巢鋼10cm連接器 (海口)",
+    "spec": "",
+    "qty": "0",
+    "weight": "5.98",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 158,
+    "code": "H7-B20016120-5",
+    "name": "蜂巢鋼20cm連接器 (海口)",
+    "spec": "",
+    "qty": "0",
+    "weight": "8.28",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 159,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=0.90m",
+    "qty": "0",
+    "weight": "4.32",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 160,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=1.20m",
+    "qty": "0",
+    "weight": "5.76",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 161,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=1.80m",
+    "qty": "0",
+    "weight": "8.64",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 162,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=2.15m",
+    "qty": "0",
+    "weight": "10.32",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 163,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=2.40m",
+    "qty": "0",
+    "weight": "11.52",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 164,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=2.65m",
+    "qty": "0",
+    "weight": "12.72",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 165,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=2.75m",
+    "qty": "0",
+    "weight": "13.20",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 166,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=2.90m",
+    "qty": "0",
+    "weight": "13.92",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 167,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=3.30m",
+    "qty": "0",
+    "weight": "15.84",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 168,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=3.60m",
+    "qty": "0",
+    "weight": "17.28",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 169,
+    "code": "",
+    "name": "H20木樑",
+    "spec": "200×80×40×27 mm L=3.90m",
+    "qty": "0",
+    "weight": "18.72",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 170,
+    "code": "",
+    "name": "H20木樑 螺絲",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 171,
+    "code": "",
+    "name": "H20木樑 螺母",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 172,
+    "code": "",
+    "name": "超重支撐模組-特殊連接棒",
+    "spec": "方管52.5×T:3mm L=240mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 173,
+    "code": "",
+    "name": "超重支撐模組-上套座",
+    "spec": "",
+    "qty": "0",
+    "weight": "9.55",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 174,
+    "code": "",
+    "name": "超重支撐模組-下套座",
+    "spec": "",
+    "qty": "0",
+    "weight": "9.55",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 175,
+    "code": "",
+    "name": "超重支撐模組-雙橫桿頭",
+    "spec": "154mm",
+    "qty": "0",
+    "weight": "1.22",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 176,
+    "code": "",
+    "name": "超重支撐模組-超重型調整座",
+    "spec": "350×350×150mm",
+    "qty": "0",
+    "weight": "17.12",
+    "total": "0.00"
+  },
+  {
+    "page": 8,
+    "no": 177,
+    "code": "",
+    "name": "超重支撐模組-螺絲螺母組",
+    "spec": "同蜂巢鋼",
+    "qty": "0",
+    "weight": "0.1",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 178,
+    "code": "",
+    "name": "施工平台",
+    "spec": "蜂巢鋼新式施工平台",
+    "qty": "0",
+    "weight": "8.05",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 179,
+    "code": "",
+    "name": "施工平台(組)",
+    "spec": "蜂巢鋼新式施工平台，含立桿",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 180,
+    "code": "",
+    "name": "施工平台用立桿",
+    "spec": "∅48.6mm × 1.8t × 1200mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 181,
+    "code": "",
+    "name": "施工平台用立桿",
+    "spec": "∅48.6mm × 1.8t × 1500mm",
+    "qty": "0",
+    "weight": "3.11",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 182,
+    "code": "",
+    "name": "施工平台用護欄",
+    "spec": "∅48.6mm × 1.8t × 2400mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 183,
+    "code": "",
+    "name": "施工平台用護欄",
+    "spec": "∅48.6mm × 1.8t × 3000mm",
+    "qty": "0",
+    "weight": "6.54",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 184,
+    "code": "",
+    "name": "施工平台用踏板",
+    "spec": "215mm × 2420mm × 1.2t",
+    "qty": "0",
+    "weight": "8.35",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 185,
+    "code": "",
+    "name": "施工平台用踏板",
+    "spec": "215mm × 3000mm × 1.2t",
+    "qty": "0",
+    "weight": "11.50",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 186,
+    "code": "",
+    "name": "施工平台架",
+    "spec": "施工平台架L=595mm",
+    "qty": "0",
+    "weight": "10.64",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 187,
+    "code": "FA-C0004-1(1版)",
+    "name": "施工平台",
+    "spec": "三角背撐架施工平台(成品)熱浸",
+    "qty": "0",
+    "weight": "10.64",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 188,
+    "code": "(1版)",
+    "name": "施工平台-螺絲",
+    "spec": "適用三角背撐架",
+    "qty": "0",
+    "weight": "0.22",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 189,
+    "code": "(1版)",
+    "name": "施工平台-螺母",
+    "spec": "適用三角背撐架",
+    "qty": "0",
+    "weight": "0.04",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 190,
+    "code": "FA-C0016-1",
+    "name": "施工平台",
+    "spec": "新版三角背撐架施工平台 熱浸",
+    "qty": "0",
+    "weight": "9.00",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 191,
+    "code": "特製品",
+    "name": "施工平台",
+    "spec": "Top Beam新式施工平台(含固定器)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 192,
+    "code": "",
+    "name": "蜂巢鋼護欄立桿",
+    "spec": "150×100mm×6t×1.5m",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 193,
+    "code": "特製品",
+    "name": "Top Beam護欄立桿",
+    "spec": "(含固定螺絲螺母)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 194,
+    "code": "",
+    "name": "錏管",
+    "spec": "∅48.3×1.8T L=2.0m 鍍鋅",
+    "qty": "0",
+    "weight": "4.14",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 195,
+    "code": "",
+    "name": "錏管",
+    "spec": "∅48.3×1.8T L=3.0m 鍍鋅",
+    "qty": "0",
+    "weight": "6.21",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 196,
+    "code": "",
+    "name": "槽鋼",
+    "spec": "75×40×5×7mm L= 1.0m(鉆孔)，藍漆",
+    "qty": "0",
+    "weight": "6.92",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 197,
+    "code": "",
+    "name": "槽鋼",
+    "spec": "75×40×5×7mm L= 2.0m(鉆孔)，藍漆",
+    "qty": "0",
+    "weight": "13.84",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 198,
+    "code": "",
+    "name": "雙C槽鋼",
+    "spec": "75×40×5×7mm，L=1.0mm",
+    "qty": "0",
+    "weight": "13.84",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 199,
+    "code": "",
+    "name": "半圓華司",
+    "spec": "∅17(鋼)",
+    "qty": "0",
+    "weight": "1.05",
+    "total": "0.00"
+  },
+  {
+    "page": 9,
+    "no": 200,
+    "code": "",
+    "name": "CN90",
+    "spec": "∅17(鋼)",
+    "qty": "0",
+    "weight": "1.00",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 201,
+    "code": "",
+    "name": "五分螺桿",
+    "spec": "TR-81 ∅17(鋼)×1.1m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 202,
+    "code": "",
+    "name": "五分螺桿(海口追加)",
+    "spec": "TR-81 ∅17(鋼)×1.6m 黑 (S45C)",
+    "qty": "0",
+    "weight": "2.53",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 203,
+    "code": "",
+    "name": "五分螺桿",
+    "spec": "TR-81 ∅17(鋼)×2.0m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 204,
+    "code": "",
+    "name": "五分螺桿",
+    "spec": "TR-81 ∅17(鋼)×3.0m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 205,
+    "code": "",
+    "name": "五分螺桿",
+    "spec": "TR-81 ∅17(鋼)×4.0m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 206,
+    "code": "",
+    "name": "七分螺桿",
+    "spec": "BS-84 ∅21(珠)×1.5m 黑 (S45C)",
+    "qty": "0",
+    "weight": "3.70",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 207,
+    "code": "",
+    "name": "七分螺桿",
+    "spec": "BS-84 ∅21(珠)×2.0m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 208,
+    "code": "FA-JS-17200-D0",
+    "name": "J型螺桿 (C214標)",
+    "spec": "∅17(鋼)×200mm P10",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 209,
+    "code": "",
+    "name": "J型螺桿",
+    "spec": "TR-81 ∅17(鋼)×0.5m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 210,
+    "code": "",
+    "name": "J型螺桿",
+    "spec": "∅21(珠)×0.75m 4TPI 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 211,
+    "code": "",
+    "name": "J型螺桿",
+    "spec": "∅21(珠)×0.75m 4TPI 黑 (SCM440)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 212,
+    "code": "特製品",
+    "name": "L型螺桿",
+    "spec": "∅17(鋼)×0.12m 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 213,
+    "code": "特製品",
+    "name": "L型螺桿(海口)",
+    "spec": "∅17(鋼)×0.2m",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 214,
+    "code": "FA-TS-1772-0",
+    "name": "T型預埋件(海口)",
+    "spec": "∅17(鋼)×72mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 215,
+    "code": "",
+    "name": "螺桿",
+    "spec": "∅26(珠)×3.8m (SCM440)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 216,
+    "code": "",
+    "name": "六角螺母",
+    "spec": "∅26mm(珠)×60mm對邊43mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 217,
+    "code": "",
+    "name": "方形華司",
+    "spec": "鐵板120×120×15t（中間孔30mm）",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 218,
+    "code": "",
+    "name": "盤帽",
+    "spec": "WN-94 ，∅17mm(鋼) 電",
+    "qty": "0",
+    "weight": "0.57",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 219,
+    "code": "",
+    "name": "盤帽",
+    "spec": "WN-94 ，∅17mm(珠)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 220,
+    "code": "",
+    "name": "盤帽",
+    "spec": "WN-92P ，∅17mm(鋼)",
+    "qty": "0",
+    "weight": "1.25",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 221,
+    "code": "",
+    "name": "盤帽",
+    "spec": "WN-92P ，∅21mm(珠)",
+    "qty": "0",
+    "weight": "1.66",
+    "total": "0.00"
+  },
+  {
+    "page": 10,
+    "no": 222,
+    "code": "",
+    "name": "斜拉桿座",
+    "spec": "170×121mm×10t 藍漆",
+    "qty": "0",
+    "weight": "3.48",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 223,
+    "code": "",
+    "name": "蜂巢鋼緊結",
+    "spec": "75×45mm×3t 五彩",
+    "qty": "0",
+    "weight": "0.70",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 224,
+    "code": "",
+    "name": "單邊緊結",
+    "spec": "CP-08單通用90˚(C) ，螺絲組鍍鋅",
+    "qty": "0",
+    "weight": "0.31",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 225,
+    "code": "",
+    "name": "緊結螺絲(長)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.15",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 226,
+    "code": "",
+    "name": "緊結螺絲(短)",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.03",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 227,
+    "code": "",
+    "name": "緊結螺帽",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.02",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 228,
+    "code": "",
+    "name": "萬向活扣",
+    "spec": "CP-08S通用90˚(C) ，螺絲組鍍鋅",
+    "qty": "0",
+    "weight": "0.63",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 229,
+    "code": "",
+    "name": "上頂梁固定器",
+    "spec": "頂樑夾(新式含螺絲)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 230,
+    "code": "",
+    "name": "鱷魚夾",
+    "spec": "CW-103B 30mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 231,
+    "code": "",
+    "name": "鱷魚夾",
+    "spec": "CW-103A 40mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 232,
+    "code": "",
+    "name": "鱷魚夾",
+    "spec": "CW-103C 55mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 233,
+    "code": "",
+    "name": "C型夾",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.40",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 234,
+    "code": "",
+    "name": "蓮霧頭",
+    "spec": "CONE-S∅17(鋼)×75mm 五彩",
+    "qty": "0",
+    "weight": "0.26",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 235,
+    "code": "",
+    "name": "蓮霧頭",
+    "spec": "CONE-S∅17(珠)",
+    "qty": "0",
+    "weight": "0.27",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 236,
+    "code": "",
+    "name": "蓮霧頭",
+    "spec": "CONE-H∅17(鋼)",
+    "qty": "0",
+    "weight": "0.60",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 237,
+    "code": "",
+    "name": "蓮霧頭",
+    "spec": "CONE-H∅21(珠)×100mm 五彩",
+    "qty": "0",
+    "weight": "0.59",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 238,
+    "code": "",
+    "name": "六角插銷+髮夾",
+    "spec": "",
+    "qty": "0",
+    "weight": "0.31",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 239,
+    "code": "",
+    "name": "六分板",
+    "spec": "1830×915mm×18t",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 240,
+    "code": "",
+    "name": "六分板",
+    "spec": "2440×1220mm×18t",
+    "qty": "0",
+    "weight": "45.00",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 241,
+    "code": "",
+    "name": "六分板",
+    "spec": "3050×1525mm×18t",
+    "qty": "0",
+    "weight": "55.84",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 242,
+    "code": "",
+    "name": "7分預埋件組",
+    "spec": "蓮霧頭：CONE-H∅21(珠)×100mm 五彩",
+    "qty": "0",
+    "weight": "0.59",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 243,
+    "code": "",
+    "name": "7分預埋件組",
+    "spec": "活動盤帽：W92P ∅21mm(珠)五彩",
+    "qty": "0",
+    "weight": "1.66",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 244,
+    "code": "",
+    "name": "7分預埋件組",
+    "spec": "螺桿：BS-84 ∅21(珠)×1.5m 黑 (S45C)",
+    "qty": "0",
+    "weight": "3.70",
+    "total": "0.00"
+  },
+  {
+    "page": 11,
+    "no": 245,
+    "code": "",
+    "name": "7分預埋件耗材",
+    "spec": "J型螺桿：∅21(珠)×0.75m 4TPI 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 246,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "陰螺桿：∅31mm(珠) ×1.0m 黑 (S15C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 247,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "六角螺母：∅31.2mm(珠) ×H:46×L40mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 248,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "鐵板：120mm×120mm×t:10mm，孔∅33mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 249,
+    "code": "",
+    "name": "預埋件耗材",
+    "spec": "J型螺桿：∅21(珠)×0.655m 6TPI 黑 (S45C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 250,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "陰螺桿：∅48mm(珠) ×1.0m 黑 (S15C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 251,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "六角螺母：∅48mm(珠) ×4T角牙×H:6.5×L5.5",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 252,
+    "code": "",
+    "name": "預埋件組",
+    "spec": "鐵板：120mm×120mm×t:15mm，孔∅50mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 253,
+    "code": "",
+    "name": "預埋件耗材",
+    "spec": "J型螺桿：∅26(珠)×0.655m 6TPI 黑 (SCM440)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 254,
+    "code": "FA-TB-481000-0",
+    "name": "預埋件組-陰螺桿 (C214標)",
+    "spec": "∅48×1000mm 4T角牙(珠，S15C)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 255,
+    "code": "FA-JS-26680-B0",
+    "name": "預埋件耗材-J型螺桿(C214標)",
+    "spec": "∅26×680mm 4TPI",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 256,
+    "code": "FA-BS-260500a-B0",
+    "name": "預埋件組-螺桿",
+    "spec": "∅26mm(珠) ×0.5m黑 (SCM440)",
+    "qty": "0",
+    "weight": "1.93",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 257,
+    "code": "FA-BS-261200-B0",
+    "name": "預埋件組-螺桿",
+    "spec": "∅26mm(珠) ×1.2m黑 (SCM440)",
+    "qty": "0",
+    "weight": "4.62",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 258,
+    "code": "FA-LP-26060-B2",
+    "name": "預埋件組-六角螺母",
+    "spec": "∅26mm(珠) ×60mm對邊38mm",
+    "qty": "0",
+    "weight": "1.00",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 259,
+    "code": "",
+    "name": "預埋件組-六角螺母",
+    "spec": "∅26mm(珠) ×60mm對邊43mm",
+    "qty": "0",
+    "weight": "0.83",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 260,
+    "code": "FA-PL1201201530-0",
+    "name": "預埋件組-方形華司",
+    "spec": "120mm×120mm×t:15mm，孔∅30mm",
+    "qty": "0",
+    "weight": "1.00",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 261,
+    "code": "于舜版本",
+    "name": "預埋件耗材-J型螺桿",
+    "spec": "∅26(珠)×570mm 4TPI 紅十字 (SCM440)",
+    "qty": "0",
+    "weight": "2.20",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 262,
+    "code": "",
+    "name": "預埋件耗材-J型螺桿",
+    "spec": "∅26(珠)黑 (SCM440)，預埋深度0.55m",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 263,
+    "code": "",
+    "name": "預埋件組-蓮霧頭",
+    "spec": "CONE-LØ26(珠)×130mm電",
+    "qty": "0",
+    "weight": "0.92",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 264,
+    "code": "FA-LP-H26130-B2",
+    "name": "預埋件組-蓮霧頭",
+    "spec": "車修CONE：(Hex:50×130mml)雙頭Ø26×50mm牙",
+    "qty": "0",
+    "weight": "0.31",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 265,
+    "code": "",
+    "name": "煞車輪",
+    "spec": "8\"，白色膠輪",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 12,
+    "no": 266,
+    "code": "",
+    "name": "調整輪",
+    "spec": "10\"，膠輪",
+    "qty": "0",
+    "weight": "23.22",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 267,
+    "code": "H9-SC6001-5",
+    "name": "移架輪",
+    "spec": "戰車輪(工固焊接)正面離地高度\n54mm(54+20才是需預留空間)",
+    "qty": "0",
+    "weight": "15.82",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 268,
+    "code": "H9-SC001-1",
+    "name": "降架設備",
+    "spec": "(重)降架用三角托架 熱浸",
+    "qty": "0",
+    "weight": "40.00",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 269,
+    "code": "",
+    "name": "模板組、拆工資",
+    "spec": "組一次、折一次",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 270,
+    "code": "",
+    "name": "設計費",
+    "spec": "圖面、計算書",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 271,
+    "code": "",
+    "name": "技術顧問費",
+    "spec": "技術指導",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 272,
+    "code": "H7-WHF-31-1-2-5",
+    "name": "三角輪(海口追加)",
+    "spec": "三角輪成品",
+    "qty": "0",
+    "weight": "2.50",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 273,
+    "code": "H7-WHS-31255-5",
+    "name": "圓管輪(海口追加)",
+    "spec": "圓管輪成品",
+    "qty": "0",
+    "weight": "2.50",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 274,
+    "code": "",
+    "name": "海口移架輪(海口)",
+    "spec": "",
+    "qty": "0",
+    "weight": "12.61",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 275,
+    "code": "",
+    "name": "海口移架輪(海口追加)",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 276,
+    "code": "FA-C0014-5",
+    "name": "三角背撐架軸輪",
+    "spec": "背撐輪 藍漆 (C214標)",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 277,
+    "code": "FA-C0033-5(1版)",
+    "name": "U型移模輪",
+    "spec": "藍漆",
+    "qty": "0",
+    "weight": "7.41",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 278,
+    "code": "FA-C0030-5(1版)",
+    "name": "三角移模輪",
+    "spec": "藍漆",
+    "qty": "0",
+    "weight": "15.19",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 279,
+    "code": "",
+    "name": "鐵角材",
+    "spec": "75×45mm×t:2.5",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 280,
+    "code": "",
+    "name": "鋼管支柱",
+    "spec": "∅48.6mm T:2.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 281,
+    "code": "",
+    "name": "彈簧束板",
+    "spec": "SC-99B",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 282,
+    "code": "",
+    "name": "化學錨錠",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 283,
+    "code": "H7-B200161232-5",
+    "name": "H型鋼連接器(C214標)",
+    "spec": "蜂巢鋼23.2cm連接器(C214標) 藍漆",
+    "qty": "0",
+    "weight": "6.81",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 284,
+    "code": "特製品",
+    "name": "三角型連接器組合",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 285,
+    "code": "H7-B200200-1",
+    "name": "蜂巢鋼矩型連接器",
+    "spec": "200×200mm 熱浸/ 藍漆",
+    "qty": "0",
+    "weight": "11.56",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 286,
+    "code": "",
+    "name": "黑鐵板(折曲倒角焊把手)(海口)",
+    "spec": "287.96×20.5×3t 3050mmL(20170518)",
+    "qty": "0",
+    "weight": "17.50",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 287,
+    "code": "",
+    "name": "活動百頁鐵板(海口追加)",
+    "spec": "307.59×63.1×3t 3050mmL",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 13,
+    "no": 288,
+    "code": "",
+    "name": "活動百頁鐵板",
+    "spec": "2.44m",
+    "qty": "0",
+    "weight": "20.00",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 289,
+    "code": "H7-12204264-5",
+    "name": "活動百頁鐵板(C214標)",
+    "spec": "140mm × t:4mm，L=1.12m 把手面紅丹漆",
+    "qty": "0",
+    "weight": "20.73",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 290,
+    "code": "H7-24404264-5",
+    "name": "活動百頁鐵板(C214標)",
+    "spec": "140mm × t:4mm，L=2.44m 把手面紅丹漆",
+    "qty": "0",
+    "weight": "44.50",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 291,
+    "code": "FA-PL-18611204-5",
+    "name": "活動百頁鐵板(CQ863標LG08)",
+    "spec": "1.12m × 4t雙邊倒角 把手面紅丹漆",
+    "qty": "0",
+    "weight": "8.53",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 292,
+    "code": "FA-PL-18624404-5",
+    "name": "活動百頁鐵板(CQ863標LG08)",
+    "spec": "2.44m × 4t雙邊倒角 把手面紅丹漆",
+    "qty": "0",
+    "weight": "17.40",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 293,
+    "code": "",
+    "name": "活動百頁鐵板(GC03標G12)",
+    "spec": "183mm×4t×2440mmL",
+    "qty": "0",
+    "weight": "20.00",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 294,
+    "code": "特製品",
+    "name": "鋼板",
+    "spec": "寬150mm×長3660mm×t:3.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 295,
+    "code": "特製品",
+    "name": "鋼板",
+    "spec": "寬190mm×長3660mm×t:3.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 296,
+    "code": "特製品",
+    "name": "鋼板(L型)",
+    "spec": "寬(210+40)mm×長2440mm×\nt:4.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 297,
+    "code": "特製品",
+    "name": "鋼板(L型)",
+    "spec": "寬(210+40)mm×長1120mm×\nt:4.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 298,
+    "code": "特製品",
+    "name": "L型鐵板",
+    "spec": "38×18mm×t:4mm 藍漆，適用夾板縫",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 299,
+    "code": "FA-PL38182440-5",
+    "name": "L型鐵板(適用夾板縫)",
+    "spec": "38×18mm×2440mm×t:4mm 藍漆",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 300,
+    "code": "",
+    "name": "",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 301,
+    "code": "H7-350100-0",
+    "name": "蜂巢鋼調整座組(海口追加) (牙條\n調整座φ17鋼x350mm)",
+    "spec": "牙條調整座∅17鋼×350mm",
+    "qty": "0",
+    "weight": "3.00",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 302,
+    "code": "H7-BJ350-5",
+    "name": "蜂巢鋼調整座組(CQ862中央避車道)",
+    "spec": "∅38.5×350mm×5t 藍漆",
+    "qty": "0",
+    "weight": "5.39",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 303,
+    "code": "H7-B174124234-5",
+    "name": "角隅連接器 (海口)",
+    "spec": "角落C型連接器 槽鋼 藍漆",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 304,
+    "code": "",
+    "name": "角隅連接器A (海口)",
+    "spec": "公邊，矩形鋼管80×40×t:4.0mm",
+    "qty": "0",
+    "weight": "7.68",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 305,
+    "code": "",
+    "name": "角隅連接器B (海口)",
+    "spec": "母邊，雙C槽鋼100×50mm",
+    "qty": "0",
+    "weight": "10.05",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 306,
+    "code": "H7-B220240-5",
+    "name": "角隅連接器A (C214標)",
+    "spec": "公邊，藍漆，矩形鋼管80×40×\nt:4.0mm",
+    "qty": "0",
+    "weight": "7.85",
+    "total": "0.00"
+  },
+  {
+    "page": 14,
+    "no": 307,
+    "code": "H7-125278-5",
+    "name": "角隅連接器B (C214標)",
+    "spec": "母邊，藍漆，雙C槽鋼125×65mm",
+    "qty": "0",
+    "weight": "10.05",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 308,
+    "code": "H7-CC-275177-5",
+    "name": "角隅連接器A(CQ863標LG08)",
+    "spec": "公邊，藍漆，矩形鋼管80×40×\nt:4.0mm",
+    "qty": "0",
+    "weight": "5.83",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 309,
+    "code": "H7-CC-387200-5",
+    "name": "角隅連接器B(CQ863標LG08)",
+    "spec": "母邊，藍漆，雙C槽鋼125×65mm",
+    "qty": "0",
+    "weight": "13.00",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 310,
+    "code": "",
+    "name": "角隅連接器A(GC03標G12)",
+    "spec": "公邊，藍漆，矩形鋼管80×40×\nt:4.0mm",
+    "qty": "0",
+    "weight": "7.84",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 311,
+    "code": "",
+    "name": "角隅連接器B(GC03標G12)",
+    "spec": "母邊，藍漆，雙C槽鋼125×65mm",
+    "qty": "0",
+    "weight": "9.71",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 312,
+    "code": "特製品",
+    "name": "倒角連接器(公)",
+    "spec": "矩形鋼管100mm×40mm×t:2.3mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 313,
+    "code": "特製品",
+    "name": "倒角連接器(公)",
+    "spec": "矩形鋼管80mm×40mm×t:4.0mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 314,
+    "code": "特製品",
+    "name": "倒角連接器(母)",
+    "spec": "雙C槽鋼125mm×65mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 315,
+    "code": "特製品",
+    "name": "100mm套座(姜水路)",
+    "spec": "管廊模板，蜂巢鋼搭下調整座用",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 316,
+    "code": "特製品",
+    "name": "50mm套座(姜水路)",
+    "spec": "箱涵模板，蜂巢鋼搭下調整座用",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 317,
+    "code": "特製品",
+    "name": "調整座(黑橋排水)",
+    "spec": "∅48.2 × 450mmL T:5mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 318,
+    "code": "特製品",
+    "name": "下調三角套座(黑橋排水)",
+    "spec": "",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 319,
+    "code": "特製品",
+    "name": "L型架(姜水路)",
+    "spec": "管廊模板，蜂巢鋼用",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 320,
+    "code": "特製品",
+    "name": "外牆側撐組(海口追加)",
+    "spec": "黑管焊底板+U調，L=650~950mm",
+    "qty": "0",
+    "weight": "8.74",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 321,
+    "code": "特製品",
+    "name": "橫向支撐組",
+    "spec": "橫桿+下調整座",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 322,
+    "code": "特製品",
+    "name": "橫向支撐組",
+    "spec": "橫桿+下調整座 L=700~800mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 323,
+    "code": "特製品",
+    "name": "橫向支撐組",
+    "spec": "橫桿+下調整座 L=450~550mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 324,
+    "code": "H7-CO5801406-5",
+    "name": "底板式側撐連接器(海口)",
+    "spec": "底板式側撐連接器 380~580mm",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 325,
+    "code": "H7-CO5802-5",
+    "name": "緊結式側撐連接器(海口)",
+    "spec": "緊結式側撐連接器 380~580mm",
+    "qty": "0",
+    "weight": "4.55",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 326,
+    "code": "H7-405450-1",
+    "name": "壁撐調整組 (C214標)",
+    "spec": "壁撐調整組(C214標) 熱浸",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 327,
+    "code": "H7-304450-1",
+    "name": "壁撐調整組 (CQ863標LG08)",
+    "spec": "0.545~0.66m 成品 熱浸",
+    "qty": "0",
+    "weight": "3.85",
+    "total": "0.00"
+  },
+  {
+    "page": 15,
+    "no": 328,
+    "code": "H1-H660405-1",
+    "name": "單頭橫桿 (C214標)",
+    "spec": "∅48.6mm×2.3t×0.405m 熱浸",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 329,
+    "code": "",
+    "name": "鋼模夾",
+    "spec": "鋼模夾Ø1/2\" 電",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 330,
+    "code": "",
+    "name": "角木(海口追加)",
+    "spec": "60mm × 60mm，L=2.4m",
+    "qty": "0",
+    "weight": "10.50",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 331,
+    "code": "",
+    "name": "角木(海口追加)",
+    "spec": "60mm × 60mm，L=3.0m",
+    "qty": "0",
+    "weight": "11.00",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 332,
+    "code": "",
+    "name": "自攻螺絲",
+    "spec": "十字薄餅頭鑽尾螺絲\nM4.8x38mml，有牙處1\"以上，依\nDIN7982規範承製。",
+    "qty": "0",
+    "weight": "",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 333,
+    "code": "",
+    "name": "型主架座\nC",
+    "spec": "橫桿用(500間距)",
+    "qty": "0",
+    "weight": "1.20",
+    "total": "0.00"
+  },
+  {
+    "page": 16,
+    "no": 334,
+    "code": "",
+    "name": "型主架座\nC",
+    "spec": "踏板用(500間距)",
+    "qty": "0",
+    "weight": "1.03",
+    "total": "0.00"
+  }
+]

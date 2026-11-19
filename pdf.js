@@ -37,7 +37,7 @@ window.createQuantityPDF=async function(data,{fmt,rowWeight,caption=''},options=
   for(const row of data.rows){
     const size=custom.length?11:12,cells=columns.map(c=>lines(c.value(row),c.width-16,c.number?11:size));const height=Math.max(43,...cells.map((list,i)=>list.length*((columns[i].number?11:size)+6)+20));
     if(y+height>H-85){finishPage();startPage();}
-    columns.forEach((c,i)=>cells[i].forEach((line,j)=>text(line,c.number?c.x+c.width-8:c.x+8,y+12+j*((c.number?11:size)+6),c.number?11:size,c.number&&i>=4&&row.weight===''?'#9e7a31':'#263f38',c.number?'right':'left')));
+    columns.forEach((c,i)=>cells[i].forEach((line,j)=>text(line,c.number?c.x+c.width-8:c.x+8,y+12+j*((c.number?11:size)+6),c.number?11:size,row.review?.length?'#b42318':(c.number&&i>=4&&row.weight===''?'#9e7a31':'#263f38'),c.number?'right':'left')));
     ctx.strokeStyle='#e0e5dd';ctx.lineWidth=.6;ctx.beginPath();ctx.moveTo(margin,y+height);ctx.lineTo(W-margin,y+height);ctx.stroke();y+=height;
   }
   if(y+130>H-85){finishPage();startPage();}y+=22;text(`已知總重量：${fmt(data.sum.grams/1000)} kg`,margin,y,18,'#164c43','left',true);y+=31;

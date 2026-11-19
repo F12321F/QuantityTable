@@ -26,7 +26,7 @@ const server=http.createServer((req,res)=>{
 });
 (async()=>{
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));const origin=`http://127.0.0.1:${server.address().port}`,base=origin+'/QuantityTable/';
-  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox']});
+  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:process.platform==='win32'?[]:['--no-sandbox']});
   try{
     const context=await browser.newContext({viewport:{width:390,height:844},acceptDownloads:true});let page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(base+'password-setup.html');

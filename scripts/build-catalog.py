@@ -1,6 +1,7 @@
 """Build the worksheet catalogue from the uploaded 2025/11 catalogue and user corrections."""
 from pathlib import Path
 import json,copy,re
+from merge_weight_catalog import merge_pdf_catalog
 root=Path(__file__).resolve().parents[1]
 rows=[]
 def add(name,spec,page,category,code=None,weight='',note=''):
@@ -74,8 +75,10 @@ for item in final:
 assert len(final)==66 and len({r['code'] for r in final})==66
 v1='sucoot-7527-2025-11-v1';v2='sucoot-7527-2025-11-v2'
 data=dict(version='sucoot-7527-2025-11-v3',source='7527.pdf',edition='2025/11',items=final,retiredIds=retired,previousVersions=[v1,v2],previousDefaults={r['id']:{'code':r['code'],'spec':r['spec']} for r in previous},previousItemIds={v1:[r['id'] for r in previous],v2:[r['id'] for r in items]})
+data=merge_pdf_catalog(data,root)
 (root/'catalog.js').write_text("'use strict';\nwindow.SUCOOT_CATALOG = "+json.dumps(data,ensure_ascii=False,indent=2)+';\n',encoding='utf8')
 notes='''# 型錄與品號對照\n\n來源：使用者上傳 `7527.pdf`，封底 2025/11，共 48 頁。頁碼採型錄印刷頁碼（印刷頁碼加 2 即為實際 PDF 頁碼）。\n\n- V60、V61、H66、D6、L6、上下調整座、活動上下調整座、基座與輔助桿品號依使用者指定。D6 先橫向後高度，以分米各補兩碼。主架、平主架、橫桿以公分補三碼。\n- 自編碼是表單識別碼，不是官方品號。未載單重不推估。\n- 48 kg 僅為 P.27 單組爬梯踏板約重，不套用至整體爬梯配置；16.53 kg 僅為 P.30 含螺絲與扶手的鋁製爬梯整組。\n- 雙C梁架採 P.21 總長 1.65 m，900 mm 圖示不視為總長。\n- H66120 等 P.32 圖中標註不套用為腳踏板／蓋板品號。\n- 依使用者要求，定位桿僅保留 L61815、L62415，移除八類不需預列的零件。\n- 此次因工作區還原造成未提交檔案遺失，依對話中已確認內容重建。\n\n| 品號 | 名稱 | 規格 | 單重 kg | 來源頁 |\n| --- | --- | --- | --- | --- |\n'''
 for item in final:notes+='| '+' | '.join([item['code'],item['name'],item['spec'],item['weight'] or '未載',str(item['page']) if item['page'] else '使用者補充'])+' |\n'
+notes+='\n## 新增重量表來源\n\n產品列來源：《綜合版-重量計算表20221013(增新超重支撐模組).pdf》，16頁334列。No.300沒有產品識別資料，未建立虛構產品。\n\n已將原有66項與重量表逐列核對：合併43列、新增290項，共356項。先依PDF列次排出333項，其餘23項既有資料置後。不同或相似不確定資料標紅保留供人工刪除；編號以PDF為準，空白單重不推估，原有非空白單重差異不覆蓋。\n\n完整逐列對照見 [核對報告](../reports/pdf-merge.html)；可重建的純產品來源資料為 `weight-pdf-20221013.json`。\n'
 (root/'catalog/SOURCES.md').write_text(notes,encoding='utf8')
-print('Built 66 catalogue items')
+print('Built',len(data['items']),'catalogue items in PDF order')

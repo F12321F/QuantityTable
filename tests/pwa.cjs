@@ -21,7 +21,7 @@ const server=http.createServer((req,res)=>{
   await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   const base=`http://127.0.0.1:${server.address().port}/QuantityTable/`;
   const profile=fs.mkdtempSync(path.join(os.tmpdir(),'quantity-pwa-'));
-  const context=await chromium.launchPersistentContext(profile,{executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:['--no-sandbox'],viewport:{width:390,height:844},acceptDownloads:true});
+  const context=await chromium.launchPersistentContext(profile,{executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',args:process.platform==='win32'?[]:['--no-sandbox'],viewport:{width:390,height:844},acceptDownloads:true});
   try{
     let page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
     await page.goto(base);
@@ -43,7 +43,7 @@ const server=http.createServer((req,res)=>{
     // Close the document, then start a new document with the network still off.
     await page.close();page=await context.newPage();page.on('pageerror',e=>errors.push(e.message));await page.goto(base+'?offline-reopen=1',{waitUntil:'domcontentloaded'});
     await page.waitForFunction(()=>document.getElementById('pwaStatus').dataset.ready==='true');
-    assert.equal(await page.locator('#rows tr').count(),67);assert.equal(await page.locator('#rows tr').last().locator('[data-column]').inputValue(),'離線 A 區');assert.match(await page.locator('#tableWeight').textContent(),/4\.000/);
+    assert.equal(await page.locator('#rows tr').count(),357);assert.equal(await page.locator('#rows tr').last().locator('[data-column]').inputValue(),'離線 A 區');assert.match(await page.locator('#tableWeight').textContent(),/4\.000/);
     await page.locator('#preview').click();await page.waitForFunction(()=>!document.getElementById('previewDownload').disabled);
     const download=page.waitForEvent('download');await page.locator('#previewDownload').click();await(await download).saveAs(path.join(results,'pwa-offline.pdf'));
     assert.equal(fs.readFileSync(path.join(results,'pwa-offline.pdf')).subarray(0,8).toString(),'%PDF-1.4');await page.locator('#backToEdit').click();
@@ -54,7 +54,7 @@ const server=http.createServer((req,res)=>{
     await page.waitForFunction(()=>!document.getElementById('updateApp').hidden);
     assert.equal(await page.locator('#customer').inputValue(),'離線測試客戶');await page.locator('#updateApp').click();
     await page.waitForFunction(async()=>{const names=await caches.keys();return names.some(n=>n.endsWith('test-revision-two'))&&document.getElementById('pwaStatus')?.dataset.ready==='true';});
-    assert.equal(await page.locator('#customer').inputValue(),'離線測試客戶');assert.equal(await page.locator('#rows tr').count(),67);assert.match(await page.locator('#tableWeight').textContent(),/4\.000/);
+    assert.equal(await page.locator('#customer').inputValue(),'離線測試客戶');assert.equal(await page.locator('#rows tr').count(),357);assert.match(await page.locator('#tableWeight').textContent(),/4\.000/);
     const cachesAfter=await page.evaluate(()=>caches.keys());assert.ok(cachesAfter.includes('travel-split-v2'));assert.equal(cachesAfter.filter(n=>n.startsWith('quantity-table:'+base+':')).length,1);
     await context.setOffline(true);await page.reload({waitUntil:'domcontentloaded'});assert.equal(await page.locator('#rows tr').last().locator('[data-column]').inputValue(),'離線 A 區');
     assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);assert.deepEqual(errors,[]);

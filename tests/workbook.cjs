@@ -4,25 +4,25 @@ const fs=require('node:fs');
 const path=require('node:path');
 const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{recursive:true});
 (async()=>{
-  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:['--no-sandbox']});
+  const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||'/usr/bin/chromium',headless:true,args:process.platform==='win32'?[]:['--no-sandbox']});
   try{
     const page=await browser.newPage({viewport:{width:1440,height:1100},acceptDownloads:true});
     const errors=[];page.on('pageerror',error=>errors.push(error.message));
     await page.addInitScript(()=>{window.confirm=()=>{throw new Error('Deletion must not depend on confirm');};});
     await page.goto(process.env.APP_URL||'http://localhost:3000');
-    assert.equal(await page.locator('#rows tr').count(),66);assert.equal(await page.locator('#preview').isDisabled(),true);
+    assert.equal(await page.locator('#rows tr').count(),356);assert.equal(await page.locator('#preview').isDisabled(),true);
     const catalog=await page.evaluate(()=>window.SUCOOT_CATALOG);
-    assert.equal(new Set(catalog.items.map(r=>r.code)).size,66);
-    for(const [name,codes] of [
-      ['主架',['V61100','V61150','V61200','V61300']],['平主架',['V60100','V60150','V60200','V60300']],
-      ['橫桿',['H66060','H66090','H66120','H66150','H66180','H66240']],['定位桿',['L61815','L62415']],
-      ['斜桿',['D60610','D60910','D61210','D61810','D60615','D60915','D61215','D61515','D61815','D62415']]
-    ])assert.deepEqual(catalog.items.filter(r=>r.name===name).map(r=>r.code),codes);
-    for(const code of ['J48601','U48601','J48601S','U48601S','V62020','V62025','V62050'])assert.equal(catalog.items.filter(r=>r.code===code).length,1);
-    for(const name of ['組合插銷','扳手','彈簧銷','墊圈套座','套座用固定勾','HN-15ET墊圈','超重型調整座','轉折平台'])assert.equal(catalog.items.some(r=>r.name===name),false);
-    assert.deepEqual(catalog.items.filter(r=>r.weight).map(r=>r.weight),['48','16.53']);
+    assert.deepEqual(catalog.items.filter(r=>r.pdfNo).map(r=>r.pdfNo),Array.from({length:334},(_,i)=>i+1).filter(n=>n!==300));
+    assert.deepEqual(catalog.items.slice(0,11).map(r=>r.code),['V60100','V60150','V60200','V60300','V61100','V61150','V61200','V61300','V62020','V62025','V62050']);
+    assert.equal(new Set(catalog.items.map(r=>r.id)).size,356);
+    for(const field of ['customer','project','salesperson','author'])assert.equal(await page.locator('#'+field).inputValue(),'');
+    assert.deepEqual(catalog.items.filter(r=>r.code==='DB100812').map(r=>[r.spec,r.weight]),[['100×80 mm L=1.2m','8.74'],['100×80 mm L=1.5m','10.75']]);
+    for(const code of ['J48601','U48601','J48600S','U48600S','V62020','V62025','V62050'])assert.equal(catalog.items.filter(r=>r.code===code).length,1);
+    assert.equal(catalog.items.find(r=>r.pdfNo===117).weight,'0.00');assert.equal(catalog.items.find(r=>r.pdfNo===99).weight,'');
+    assert.equal(catalog.items.find(r=>r.pdfNo===39).code,'');
+    assert.ok(await page.locator('#rows .needs-review').count()>0);
     await page.locator('#search').fill('C50500');assert.equal(await page.locator('#rows tr:visible').count(),1);
-    await page.locator('#search').fill('');await page.locator('#category').selectOption('腳踏板與蓋板');assert.equal(await page.locator('#rows tr:visible').count(),9);
+    await page.locator('#search').fill('');await page.locator('#category').selectOption('腳踏板與蓋板');assert.equal(await page.locator('#rows tr:visible').count(),11);
     await page.locator('#category').selectOption('');
     // Old saved rows are migrated without losing user edits; retired entries are archived.
     await page.evaluate(()=>localStorage.setItem('ringlock-quantity-v1',JSON.stringify({catalogVersion:'sucoot-7527-2025-11-v2',rows:[
@@ -31,10 +31,10 @@ const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{re
       {code:'CUSTOM-OLD',name:'舊自訂品項',spec:'保留',quantity:'2',weight:'3'}
     ]})));
     await page.reload();let saved=await page.evaluate(()=>JSON.parse(localStorage.getItem('ringlock-quantity-v1')));
-    assert.equal(saved.rows[0].code,'L61815');assert.equal(saved.rows.length,2);assert.equal(saved.archivedRows.length,1);
+    assert.equal(saved.rows.find(r=>r.catalogId==='sucoot-202511-032').code,'L61815');assert.equal(saved.rows.find(r=>r.catalogId==='sucoot-202511-032').weight,'5');assert.equal(saved.rows.length,292);assert.equal(saved.archivedRows.length,1);
     assert.match(await page.locator('#tableWeight').textContent(),/21\.000/);
-    await page.locator('#restoreCatalog').click();assert.equal(await page.locator('#rows tr').count(),67);
-    await page.locator('#restoreCatalog').click();assert.equal(await page.locator('#rows tr').count(),67);
+    await page.locator('#restoreCatalog').click();assert.equal(await page.locator('#rows tr').count(),357);
+    await page.locator('#restoreCatalog').click();assert.equal(await page.locator('#rows tr').count(),357);
     // Isolated manual-entry fixture.
     await page.evaluate(()=>localStorage.setItem('ringlock-quantity-v1',JSON.stringify({catalogVersion:window.SUCOOT_CATALOG.version,rows:[]})));
     await page.reload();
@@ -85,6 +85,6 @@ const results=path.resolve(__dirname,'../test-results');fs.mkdirSync(results,{re
     for(const name of ['備註','批號','區段','倉別','驗收日期'])await column(name);assert.equal(await page.locator('[data-custom-head]').count(),6);
     await page.locator('#addColumn').click();assert.equal(await page.locator('#columnDialog').isVisible(),false);
     assert.deepEqual(errors,[]);
-    console.log(`PASS: 66 source items/codes; filtering; legacy preservation/archive; metadata layout/save; weight/missing/zero/invalid inputs; visible mobile deletion and undo; custom column add/delete/undo/save; exact PDF preview pages (${portrait} portrait/${landscape} landscape); repeated PDF metadata; zoom; print; six-column limit; no JavaScript errors.`);
+    console.log(`PASS: 356 items in PDF order, blank metadata/codes and red reviews; filtering; legacy preservation/archive; metadata layout/save; weight/missing/zero/invalid inputs; visible mobile deletion and undo; custom column add/delete/undo/save; exact PDF preview pages (${portrait} portrait/${landscape} landscape); repeated PDF metadata; zoom; print; six-column limit; no JavaScript errors.`);
   }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
